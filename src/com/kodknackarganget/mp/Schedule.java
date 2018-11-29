@@ -15,9 +15,7 @@ public class Schedule {
 
     }
 
-
     public int calculateWeeks() {
-
 
         if(endWeek - startWeek == 0) {
 
@@ -28,5 +26,27 @@ public class Schedule {
     }
 
 
+    public int getStartWeek(){
+        return startWeek;
+    }
 
+    public int getEndWeek() {
+        return endWeek;
+    }
+
+    public double getHourBudget() {
+        return hourBudget;
+    }
+
+    public void setStartWeek(int newStartWeek) {
+
+    }
+    public void setEndWeek(int newEndWeek) {
+
+    }
+    public void setHourBudget(double newHourBudget) {
+
+    }
+
+    
 }
