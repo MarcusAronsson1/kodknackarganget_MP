@@ -25,9 +25,32 @@ public class Member {
     }
 
     public void addHoursWorked(String description, double hours){
+        getHoursWorked()
         hoursWorked // Add something to it i guess? not really sure
     }
 
 
+    public String getName() {
+        return name;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public double getCostPerHour() {
+        return costPerHour;
+    }
+
+    public ArrayList<String> getTaskNames() {
+        return taskNames;
+    }
+
+    public HashMap<String, Integer> getHoursWorked() {
+        return hoursWorked;
+    }
 }
