@@ -2,6 +2,10 @@ package com.kodknackarganget.mp;
 
 public class Schedule {
 
+    public static int LESS_LESS_THAN_ONE_WEEK = 0;
+    public static int ONE_WEEK = 1;
+
+
     private int startWeek;
     private int endWeek;
     private double hourBudget;
@@ -17,9 +21,9 @@ public class Schedule {
 
     public int calculateWeeks() {
 
-        if(endWeek - startWeek == 0) {
+        if(endWeek - startWeek == LESS_LESS_THAN_ONE_WEEK) {
 
-            return 1;
+            return ONE_WEEK;
         }
 
         return endWeek - startWeek;
@@ -48,5 +52,5 @@ public class Schedule {
 
     }
 
-    
+
 }
