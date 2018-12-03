@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Member {
+    /*
     String name;
     int id;
     String email;
@@ -53,4 +54,5 @@ public class Member {
     public HashMap<String, Integer> getHoursWorked() {
         return hoursWorked;
     }
+    */
 }

@@ -3,6 +3,7 @@ package com.kodknackarganget.mp;
 import java.util.ArrayList;
 
 public class Task {
+    /*
     private Arraylist<Member> taskMembers;
     private Schedule schedule;
     private ArrayList<Risk> taskRisks;
@@ -26,5 +27,5 @@ public class Task {
         }
         return totalCost;
     }
-
+*/
 }

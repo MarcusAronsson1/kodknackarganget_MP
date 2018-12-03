@@ -22,8 +22,8 @@ public class Main extends Application {
             System.out.println("Hello World!");
         });
 
-        primaryStage.setTitle("Hello kodknäckargänget!");
-        primaryStage.setScene(new Scene(button, 300, 275));
+        primaryStage.setTitle("Main");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
     }
