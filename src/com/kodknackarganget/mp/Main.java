@@ -7,13 +7,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("createProject.fxml"));
 
         final Button button = new Button();
         button.setText("Haj du");
@@ -22,8 +23,9 @@ public class Main extends Application {
             System.out.println("Hello World!");
         });
 
-        primaryStage.setTitle("Main");
+        //primaryStage.setTitle("Main");
         primaryStage.setScene(new Scene(root));
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.show();
 
     }
