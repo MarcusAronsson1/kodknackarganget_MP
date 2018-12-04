@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Project {
 
     public static int INITIAL_HOURS = 0;
+    public static final String ls = System.lineSeparator();
 
     private String name;
     private ArrayList<Task> tasks;
@@ -36,31 +37,62 @@ public class Project {
     public double calculateScheduleVariance() {
 
     }
-    public int getTotalHours(Member member) {
+    /* public int getTotalHours(Member member) {
 
         int totalHours = INITIAL_HOURS;
 
         for(Member member : projectMembers) {
 
-            totalHours += projectMembers.getHoujjjrsWorked;
+            totalHours += projectMembers.getHoursWorked;
+        }
+
+        return totalHours;
+    } */
+
+    public String getTotalHoursPerMember() {
+        String information = "";
+
+        for(Member currentMember : projectMembers) {
+
+            information = currentMember.getName() + " has worked a total of" + currentMember.getHoursWorked() + " hours." + ls;
+        }
+
+        return information;
+    }
+
+    public double totalProjectHours() {
+        double totalHours = INITIAL_HOURS;
+
+        for(Member currentMember : projectMembers) {
+
+            totalHours += currentMember.getHoursWorked();
         }
 
         return totalHours;
     }
 
-    public double getTotalHoursPerMember() {
+    public int getRisk(Risk riskDescription) {
+
+        return riskDescription.calculateRisk;
 
     }
 
-    public Risk getRisks() {
+    public String getMembers() {
 
-    }
+        String information = "";
+        information = "Members within the project " + getName() + ":" + ls;
 
-    public Member getMembers() {
+        for(Member currentMember : projectMembers) {
 
+            information = currentMember.getName();
+        }
+
+        return information;
     }
 
     public Task getTasks() {
+
+        String 
 
     }
 
@@ -104,7 +136,21 @@ public class Project {
 
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public double getProjectBudget() {
+        return projectBudget;
+    }
+
+    public void setName(String newName) {
+
+    }
+
+    public void setProjectBudget(double newProjectBudget) {
+
+    }
 
 
 
