@@ -92,8 +92,6 @@ public class Project {
 
     public Task getTasks() {
 
-        String 
-
     }
 
     public double getTotalCost() {
@@ -101,11 +99,8 @@ public class Project {
     }
 
     public String getCompletedTasks() {
-
     }
-
     public String getCurrentTasks() {
-
     }
 
     public Member getMember(int id) {
@@ -125,11 +120,9 @@ public class Project {
     }
 
     public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
-
     }
 
     public void addRisk(String description, int impact, int probability) {
-
     }
 
     public void setSchedule(int startWeek, int endWeek, double hourBudget) {
