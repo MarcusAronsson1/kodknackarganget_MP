@@ -46,7 +46,7 @@ public class Project {
         for(Member member : projectMembers) {
 
             totalHours += projectMembers.getHoursWorked;
-        }
+        } hey :)
 
         return totalHours;
     } */
