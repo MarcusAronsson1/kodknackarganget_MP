@@ -59,7 +59,7 @@ public class Task {
 
     public void removeMember(Member memberToBeRemoved){
         for(Member currentMember : taskMembers){
-            if(currentMember.id == memberToBeRemoved.id){
+            if(currentMember.getId() == memberToBeRemoved.getId()){
                 taskMembers.remove(currentMember);
             }
         }
