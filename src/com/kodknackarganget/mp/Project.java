@@ -64,11 +64,22 @@ public class Project {
     }
 
     public String getCompletedTasks() {
+        for (Task completedTask : tasks) {
+            if (completedTask.isCompleted == true) {      // need a getter to the boolean in task
+                return  completedTask.toString();
+            }
+        }
+        return "No completed tasks";
 
     }
 
     public String getCurrentTasks() {
-
+        for (Task currentTask : tasks){
+            if (currentTask.isCompleted == false){   // need a getter to the boolean in Task
+                return currentTask.toString();
+            }
+        }
+        return "No current tasks";
     }
 
     public Member getMember(int id) {
@@ -88,11 +99,13 @@ public class Project {
     }
 
     public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
-
+        Task newTask = new Task(description,startWeek,endWeek,hourBudget,moneyBudget);
+        tasks.add(newTask);
     }
 
     public void addRisk(String description, int impact, int probability) {
-
+        Risk newRisk = new Risk(description,impact,probability);
+        projectRisks.add(newRisk);
     }
 
     public void setSchedule(int startWeek, int endWeek, double hourBudget) {
