@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Project {
 
     public static int INITIAL_HOURS = 0;
+    public static double MINIMUM_BUDGET = 0.0;
     public static final String ls = System.lineSeparator();
 
     private String name;
@@ -78,26 +79,36 @@ public class Project {
     }
 
     public String getMembers() {
-
         String information = "";
-        information = "Members within the project " + getName() + ":" + ls;
 
         for(Member currentMember : projectMembers) {
 
-            information = currentMember.getName();
+            information = currentMember.getName() + ls;
         }
 
-        return information;
+        return "Members within the project " + getName() + ":" + ls + information;
     }
 
-    public Task getTasks() {
+    public String getTasks() {
+        String information = "";
 
-        String 
+        for(Task currentTask : tasks) {
 
+            information = currentTask.getDescription + ls;
+        }
+
+        return "The tasks within this project is:" + ls + information;
     }
 
-    public double getTotalCost() {
+    public String getTotalTaskCost() {
+        double totalCost = MINIMUM_BUDGET;
 
+        for(Task currentTask : tasks) {
+
+            totalCost += currentTask.getMoneyBudget(); //I think moneyBudget the correct attribute to have here, if I understand the method correctly
+        }
+
+        return "The total cost of the tasks within this project is: " + totalCost + "SEK";
     }
 
     public String getCompletedTasks() {
@@ -109,6 +120,8 @@ public class Project {
     }
 
     public Member getMember(int id) {
+
+
 
     }
 
