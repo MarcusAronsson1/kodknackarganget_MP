@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Project {
 
+    public static int INITIAL_HOURS = 0;
+
     private String name;
     private ArrayList<Task> tasks;
     private ArrayList<Member> projectMembers;
@@ -25,22 +27,25 @@ public class Project {
 
     }
 
-
-
     public double calculateCostVariance() {
 
     }
-
     public double calculateEarnedValue() {
 
     }
-
     public double calculateScheduleVariance() {
 
     }
+    public int getTotalHours(Member member) {
 
-    public double getTotalHours() {
+        int totalHours = INITIAL_HOURS;
 
+        for(Member member : projectMembers) {
+
+            totalHours += projectMembers.getHoujjjrsWorked;
+        }
+
+        return totalHours;
     }
 
     public double getTotalHoursPerMember() {
