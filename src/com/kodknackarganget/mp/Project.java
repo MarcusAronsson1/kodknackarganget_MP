@@ -42,7 +42,7 @@ public class Project {
 
         for(Member member : projectMembers) {
 
-            totalHours += projectMembers.getHoursWorked;
+            totalHours += projectMembers.getHoujjjrsWorked;
         }
 
         return totalHours;
