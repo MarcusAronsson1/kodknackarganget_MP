@@ -6,6 +6,7 @@ public class Project {
 
     public static int INITIAL_HOURS = 0;
     public static double MINIMUM_BUDGET = 0.0;
+    public static int RISK_NOT_FOUND = 0;
     public static final String ls = System.lineSeparator();
 
     private String name;
@@ -24,7 +25,7 @@ public class Project {
         this.tasks = new ArrayList<>();
         this.projectMembers = new ArrayList<Member>();
         this.projectRisks = new ArrayList<>();
-        this. schedule = new Schedule(startWeek, endWeek, hourBudget);
+        this.schedule = new Schedule(startWeek, endWeek, hourBudget);
         this.projectBudget = projectBudget;
 
     }
@@ -74,8 +75,14 @@ public class Project {
 
     public int getRisk(Risk riskDescription) {
 
-        return riskDescription.calculateRisk;
+        for(Risk desiredRisk : projectRisks) {
 
+            if(desiredRisk.getDescription().equals(riskDescription)) {
+
+                return desiredRisk.calculateRisk();
+            }
+        }
+        return RISK_NOT_FOUND;
     }
 
     public String getMembers() {
@@ -121,19 +128,38 @@ public class Project {
 
     public Member getMember(int id) {
 
+        for(Member desiredMember : projectMembers) {
 
+            if(desiredMember.getId() == id) {
 
+                return desiredMember;
+            }
+        }
+
+        return null;
     }
 
     public Member getMember(String name) {
 
+        for(Member desiredMember : projectMembers) {
+
+            if(desiredMember.getName().equals(name)) {
+
+                return desiredMember;
+            }
+        }
+        return null;
     }
 
     public int getWeek() {
 
+        return schedule.calculateWeeks();
     }
 
-    public void addMember(int id) {
+    public void addMember(String name, int id, String email, double costPerHour) {
+
+        Member newMember = new Member (name, id, email, costPerHour);
+        this.projectMembers.add(newMember);
 
     }
 
@@ -164,12 +190,6 @@ public class Project {
     public void setProjectBudget(double newProjectBudget) {
 
     }
-
-
-
-
-
-
 
 
 
