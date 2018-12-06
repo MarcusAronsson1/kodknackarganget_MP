@@ -41,9 +41,9 @@
             <Button id="createBtn" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="ADD" />
             <RadioButton layoutX="35.0" layoutY="44.0" mnemonicParsing="false" styleClass="font" text="To Project">
                <toggleGroup>
-                  <ToggleGroup fx:id="radios" />
+                  <ToggleGroup fx:id="projectOrTask" />
                </toggleGroup></RadioButton>
-            <RadioButton layoutX="35.0" layoutY="109.0" mnemonicParsing="false" styleClass="font" text="To Task" toggleGroup="$radios" />
+            <RadioButton layoutX="35.0" layoutY="109.0" mnemonicParsing="false" styleClass="font" text="To Task" toggleGroup="$projectOrTask" />
             <ComboBox layoutX="164.0" layoutY="104.0" prefHeight="35.0" prefWidth="250.0" styleClass="dropDown" />
             <Slider layoutX="163.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="sliders" />
             <Slider layoutX="163.0" layoutY="341.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" styleClass="sliders" />

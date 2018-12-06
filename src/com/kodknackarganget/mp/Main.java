@@ -15,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("popups/addTask.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
 
         final Button button = new Button();
         button.setText("Haj du");
@@ -26,9 +26,10 @@ public class Main extends Application {
 
         //primaryStage.setTitle("Main");
         primaryStage.setScene(new Scene(root));
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.getScene().setFill(Color.TRANSPARENT);
         primaryStage.setOpacity(0.95);
+        primaryStage.setMaximized(true);
         primaryStage.show();
 
     }
