@@ -10,17 +10,16 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="mainBackground" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="mainBackground" stylesheets="@../css/stylePopups.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: ;">
          <children>
             <Label alignment="CENTER" styleClass="header" text="CREATE PROJECT" />
          </children>
       </HBox>
       <Pane layoutY="100.0" prefHeight="500.0" prefWidth="450.0">
          <children>
-            <TextField id="nameTextField" layoutX="163.0" layoutY="37.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@css/style.css" />
+            <TextField id="nameTextField" layoutX="163.0" layoutY="37.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
             <Label layoutX="38.0" layoutY="44.0" styleClass="font" text="Project name" textFill="WHITE">
                <font>
                   <Font size="14.0" />
@@ -46,13 +45,13 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField id="startWeekTextField" layoutX="163.0" layoutY="114.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@css/style.css" />
-            <TextField id="endWeekTextField" layoutX="163.0" layoutY="191.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@css/style.css" />
-            <TextField id="hoursBudgetTextField" layoutX="163.0" layoutY="268.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@css/style.css" />
-            <TextField id="moneyBudgetTextField" layoutX="163.0" layoutY="347.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@css/style.css" />
+            <TextField id="startWeekTextField" layoutX="163.0" layoutY="114.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
+            <TextField id="endWeekTextField" layoutX="163.0" layoutY="191.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
+            <TextField id="hoursBudgetTextField" layoutX="163.0" layoutY="268.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
+            <TextField id="moneyBudgetTextField" layoutX="163.0" layoutY="347.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
             <Separator layoutX="25.0" opacity="0.28" prefHeight="2.0" prefWidth="400.0" />
             <Separator layoutX="25.0" layoutY="418.0" opacity="0.28" prefHeight="2.0" prefWidth="400.0" />
-            <Button id="cancelBtn" layoutX="114.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #07519C; -fx-text-fill: #6BAED6;" text="CANCEL" />
+            <Button id="cancelBtn" layoutX="114.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="CANCEL" />
             <Button id="createBtn" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="SAVE" />
          </children>
       </Pane>
