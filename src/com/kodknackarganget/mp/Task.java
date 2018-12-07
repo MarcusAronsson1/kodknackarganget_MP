@@ -8,6 +8,7 @@ public class Task {
     private ArrayList<Risk> taskRisks;
     private double moneyBudget;
     private String description;
+
     private boolean isCompleted;
 
     public static final String noMembers = "";
@@ -67,5 +68,53 @@ public class Task {
 
     public int getWeeks(){
         return this.schedule.calculateWeeks();
+    }
+
+    public double getMoneyBudget() {
+        return moneyBudget;
+    }
+
+    public void setMoneyBudget(double moneyBudget) {
+        this.moneyBudget = moneyBudget;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
+    }
+
+    public ArrayList<Member> getTaskMembers() {
+        return taskMembers;
+    }
+
+    public void setTaskMembers(ArrayList<Member> taskMembers) {
+        this.taskMembers = taskMembers;
+    }
+
+    public Schedule getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(Schedule schedule) {
+        this.schedule = schedule;
+    }
+
+    public ArrayList<Risk> getTaskRisks() {
+        return taskRisks;
+    }
+
+    public void setTaskRisks(ArrayList<Risk> taskRisks) {
+        this.taskRisks = taskRisks;
     }
 }
