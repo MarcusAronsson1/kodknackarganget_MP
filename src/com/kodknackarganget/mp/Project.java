@@ -101,7 +101,7 @@ public class Project {
 
         for(Task currentTask : tasks) {
 
-            information = currentTask.getDescription + ls;
+            information = currentTask.getDescription() + ls;
         }
 
         return "The tasks within this project is:" + ls + information;
