@@ -34,6 +34,11 @@
 	-fx-text-fill: #D3E7F1;
 }
 
+.button:hover {
+    -fx-background-color: linear-gradient(from 50% 100% to 50% 0%, #06417c, #1c629e);
+    -fx-text-fill: #D3E7F1;
+}
+
 .dropDown {
 	-fx-background-color: transparent;
 	-fx-background-radius: 20px;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.chart.*?>
 <?import java.lang.*?>
@@ -8,30 +9,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1300.0" stylesheets="@css/styleMain.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.Controller">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="mainPane" stylesheets="@css/styleMain.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.Controller">
    <children>
-      <HBox prefHeight="100.0" prefWidth="1300.0">
-         <children>
-            <ToolBar prefHeight="45.0" prefWidth="379.0">
-              <items>
-                <Button mnemonicParsing="false" text="Button" />
-                  <Button mnemonicParsing="false" text="Button" />
-                  <Button mnemonicParsing="false" text="Button" />
-                  <ChoiceBox prefWidth="150.0" />
-              </items>
-            </ToolBar>
-         </children>
-      </HBox>
-      <VBox layoutY="100.0" prefHeight="700.0" prefWidth="200.0" />
-      <GridPane layoutX="200.0" layoutY="100.0" prefHeight="700.0" prefWidth="1100.0" styleClass="gridPane">
+      <HBox layoutX="200.0" prefHeight="100.0" prefWidth="800.0" />
+      <VBox layoutY="100.0" prefHeight="500.0" prefWidth="200.0" styleClass="vBox" />
+      <GridPane layoutX="200.0" layoutY="100.0" prefHeight="500.0" prefWidth="800.0" styleClass="gridPane">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="355.0" minHeight="10.0" prefHeight="242.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="252.0" minHeight="10.0" prefHeight="242.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <TabPane styleClass="gridPane-cell" tabClosingPolicy="UNAVAILABLE">
@@ -40,9 +29,9 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <LineChart prefHeight="195.0" prefWidth="550.0">
+                              <LineChart prefHeight="212.0" prefWidth="400.0">
                                 <xAxis>
-                                  <CategoryAxis side="BOTTOM" />
+                                  <CategoryAxis prefHeight="0.0" prefWidth="339.0" side="BOTTOM" />
                                 </xAxis>
                                 <yAxis>
                                   <NumberAxis side="LEFT" />
@@ -86,13 +75,12 @@
                   </Tab>
               </tabs>
             </TabPane>
-            <AnchorPane styleClass="gridPane-cell" GridPane.columnIndex="1">
-               <children>
-                  <Label layoutX="221.0" layoutY="83.0" text="Project progress" />
-                  <ProgressBar layoutX="51.0" layoutY="118.0" prefWidth="200.0" progress="0.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="118.0" />
-               </children>
-            </AnchorPane>
          </children>
       </GridPane>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="topLeft">
+         <children>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="24.0" styleClass="headerFont" text="PROJECT" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

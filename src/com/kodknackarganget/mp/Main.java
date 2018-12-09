@@ -13,24 +13,20 @@ import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
+    public static Stage stage;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
-
-        final Button button = new Button();
-        button.setText("Haj du");
-        button.setOnAction((ActionEvent event) -> {
-            // Printing Hello World! to the console
-            System.out.println("Hello World!");
-        });
+        Parent root = FXMLLoader.load(getClass().getResource("popups/addRisk.fxml"));
 
         //primaryStage.setTitle("Main");
         primaryStage.setScene(new Scene(root));
-        primaryStage.initStyle(StageStyle.DECORATED);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.getScene().setFill(Color.TRANSPARENT);
-        primaryStage.setOpacity(0.95);
-        primaryStage.setMaximized(true);
+        primaryStage.setOpacity(0.97);
+        primaryStage.setMaximized(false);
         primaryStage.show();
+        stage = primaryStage;
 
     }
 

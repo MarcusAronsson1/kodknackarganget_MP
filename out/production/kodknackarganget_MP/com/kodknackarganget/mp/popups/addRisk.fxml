@@ -10,11 +10,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="mainBackground" stylesheets="@../css/stylePopups.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="mainBackground" stylesheets="@../css/stylePopups.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.popups.addRiskController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0">
          <children>
-            <Label alignment="CENTER" styleClass="header" text="ADD RISK" />
+            <Label fx:id="header" alignment="CENTER" styleClass="header" text="ADD RISK" />
          </children>
       </HBox>
       <Pane layoutY="100.0" prefHeight="500.0" prefWidth="450.0">
@@ -34,22 +34,22 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField id="startWeekTextField" layoutX="163.0" layoutY="179.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
+            <TextField fx:id="descriptionInput" layoutX="163.0" layoutY="179.0" prefHeight="35.0" prefWidth="250.0" styleClass="textField" stylesheets="@../css/stylePopups.css" />
             <Separator layoutX="25.0" opacity="0.28" prefHeight="2.0" prefWidth="400.0" />
             <Separator layoutX="25.0" layoutY="418.0" opacity="0.28" prefHeight="2.0" prefWidth="400.0" />
-            <Button id="cancelBtn" layoutX="114.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="CANCEL" />
-            <Button id="createBtn" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="ADD" />
-            <RadioButton layoutX="35.0" layoutY="44.0" mnemonicParsing="false" styleClass="font" text="To Project">
+            <Button id="cancelBtn" fx:id="cancelBtn" layoutX="114.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="CANCEL" />
+            <Button id="createBtn" fx:id="addBtn" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="ADD" />
+            <RadioButton fx:id="projectRadio" layoutX="35.0" layoutY="44.0" mnemonicParsing="false" styleClass="font" text="To Project">
                <toggleGroup>
                   <ToggleGroup fx:id="projectOrTask" />
                </toggleGroup></RadioButton>
-            <RadioButton layoutX="35.0" layoutY="109.0" mnemonicParsing="false" styleClass="font" text="To Task" toggleGroup="$projectOrTask" />
+            <RadioButton fx:id="taskRadio" layoutX="35.0" layoutY="109.0" mnemonicParsing="false" styleClass="font" text="To Task" toggleGroup="$projectOrTask" />
             <ComboBox layoutX="164.0" layoutY="104.0" prefHeight="35.0" prefWidth="250.0" styleClass="dropDown" />
-            <Slider layoutX="163.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="sliders" />
-            <Slider layoutX="163.0" layoutY="341.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" styleClass="sliders" />
+            <Slider fx:id="impactSlider" layoutX="163.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="sliders" />
+            <Slider fx:id="probSlider" layoutX="163.0" layoutY="341.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="17.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" styleClass="sliders" />
          </children>
       </Pane>
-      <Label id="closeBtn" alignment="BASELINE_RIGHT" layoutX="432.0" styleClass="font" text="x">
+      <Label id="closeBtn" alignment="BASELINE_RIGHT" layoutX="432.0" styleClass="font" text="x" fx:id="xBtn">
          <font>
             <Font size="21.0" />
          </font>
