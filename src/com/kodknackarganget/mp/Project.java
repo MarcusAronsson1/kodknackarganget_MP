@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Project {
 
     public static int INITIAL_HOURS = 0;
-    public static double MINIMUM_BUDGET = 0.0;
+    public static double MINIMUM = 0.0;
     public static int RISK_NOT_FOUND = 0;
     public static final String ls = System.lineSeparator();
 
@@ -32,9 +32,9 @@ public class Project {
 
     public double calculateCostVariance() {
 
-        return projectBudget -
-
+        return projectBudget - getTotalCost();
     }
+
     public double calculateEarnedValue() {
 
     }
@@ -56,43 +56,27 @@ public class Project {
 
     public double getTotalCost() {
 
-
-    }
-
-    public int getRisk(Risk riskDescription) {
-
-        for(Risk desiredRisk : projectRisks) {
-
-            if(desiredRisk.getDescription().equals(riskDescription)) {
-
-                return desiredRisk.calculateRisk();
-            }
-        }
-        return RISK_NOT_FOUND;
-    }
-
-    public String getMembers() {
-        String information = "";
+        double totalCost = MINIMUM;
 
         for(Member currentMember : projectMembers) {
 
-            information = currentMember.getName() + ls;
+            totalCost = currentMember.getCostPerHour() * currentMember.getHoursWorked();
         }
 
-        return "Members within the project " + getName() + ":" + ls + information;
+        return totalCost;
     }
 
-    public String getTasks() {
-        String information = "";
-
-        for(Task currentTask : tasks) {
-
-            information = currentTask.getDescription() + ls;
-        }
-
-        return "The tasks within this project is:" + ls + information;
+    public ArrayList<Risk> getRisk() {
+        return projectRisks;
     }
 
+    public ArrayList<Member> getMembers() {
+        return projectMembers;
+    }
+
+    public ArrayList<Task> getTasks() {
+        return tasks;
+    }
 
     public String getCompletedTasks() {
         for (Task completedTask : tasks) {
@@ -101,7 +85,6 @@ public class Project {
             }
         }
         return "No completed tasks";
-
     }
 
     public String getCurrentTasks() {  //return arraylist
@@ -122,7 +105,6 @@ public class Project {
                 return desiredMember;
             }
         }
-
         return null;
     }
 
@@ -138,7 +120,7 @@ public class Project {
         return null;
     }
 
-    public int getWeek() {
+    public int getAmountOfWeeks() {
 
         return schedule.calculateWeeks();
     }
@@ -152,6 +134,7 @@ public class Project {
 
     public void addMemberToTask(String name, String description) {
 
+        
     }
 
     public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
@@ -163,6 +146,7 @@ public class Project {
         Risk newRisk = new Risk(description,impact,probability);
         projectRisks.add(newRisk);
     }
+
 
     public void setSchedule(int startWeek, int endWeek, double hourBudget) {
 
