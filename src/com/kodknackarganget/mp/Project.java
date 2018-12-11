@@ -6,7 +6,6 @@ public class Project {
 
     public static int INITIAL_HOURS = 0;
     public static double MINIMUM = 0.0;
-    public static int RISK_NOT_FOUND = 0;
     public static final String ls = System.lineSeparator();
 
     private String name;
@@ -36,6 +35,8 @@ public class Project {
     }
 
     public double calculateEarnedValue() {
+
+        
 
     }
     public double calculateScheduleVariance() {
@@ -70,7 +71,7 @@ public class Project {
         return projectRisks;
     }
 
-    public ArrayList<Member> getMembers() {
+    public ArrayList<Member> getProjectMembers() {
         return projectMembers;
     }
 
@@ -78,7 +79,7 @@ public class Project {
         return tasks;
     }
 
-    public String getCompletedTasks() {
+    public String getCompletedTasks() {          //return arraylist
         for (Task completedTask : tasks) {
             if (completedTask.isCompleted == true) {      // need a getter to the boolean in task
                 return  completedTask.toString();
@@ -87,7 +88,7 @@ public class Project {
         return "No completed tasks";
     }
 
-    public String getCurrentTasks() {  //return arraylist
+    public String getCurrentTasks() {          //return arraylist
         for (Task currentTask : tasks){
             if (currentTask.isCompleted == false){   // need a getter to the boolean in Task
                 return currentTask.toString();
@@ -120,6 +121,18 @@ public class Project {
         return null;
     }
 
+    public Task getTask(String description) {
+
+        for(Task desiredTask : tasks) {
+
+            if(desiredTask.equals(description)) {
+
+                return desiredTask;
+            }
+        }
+        return null;
+    }
+
     public int getAmountOfWeeks() {
 
         return schedule.calculateWeeks();
@@ -129,12 +142,14 @@ public class Project {
 
         Member newMember = new Member (name, id, email, costPerHour);
         this.projectMembers.add(newMember);
-
     }
 
     public void addMemberToTask(String name, String description) {
 
-        
+        Task desiredTask = getTask(description);
+        Member memberToAdd = getMember(name);
+
+        desiredTask.addMember(memberToAdd);
     }
 
     public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
@@ -148,6 +163,10 @@ public class Project {
     }
 
 
+    public Schedule getSchedule() {
+        return schedule;
+    }
+
     public void setSchedule(int startWeek, int endWeek, double hourBudget) {
 
     }
@@ -156,18 +175,29 @@ public class Project {
         return name;
     }
 
-    public double getProjectBudget() {
-        return projectBudget;
-    }
-
     public void setName(String newName) {
 
+    }
+
+    public double getProjectBudget() {
+        return projectBudget;
     }
 
     public void setProjectBudget(double newProjectBudget) {
 
     }
 
+    public void setProjectMembers(ArrayList<Member> projectMembers) {
+        this.projectMembers = projectMembers;
+    }
+
+    public void setTasks(ArrayList<Task> tasks) {
+        this.tasks = tasks;
+    }
+
+    public void setProjectRisks(ArrayList<Risk> projectRisks) {
+        this.projectRisks = projectRisks;
+    }
 
 
 
