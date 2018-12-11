@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class Project {
 
     public static int INITIAL_HOURS = 0;
-    public static double MINIMUM_BUDGET = 0.0;
-    public static int RISK_NOT_FOUND = 0;
+    public static double MINIMUM = 0.0;
     public static final String ls = System.lineSeparator();
 
     private String name;
@@ -14,32 +13,39 @@ public class Project {
     private ArrayList<Member> projectMembers;
     private ArrayList<Risk> projectRisks;
     private Schedule schedule;
-    private double projectBudget;
+    private double hourBudget;
+    private double moneyBudget;
 
 
 
 
-    public Project(String name, int startWeek, int endWeek, double hourBudget, double projectBudget) {
+    public Project(String name, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
 
         this.name = name;
         this.tasks = new ArrayList<>();
         this.projectMembers = new ArrayList<Member>();
         this.projectRisks = new ArrayList<>();
         this.schedule = new Schedule(startWeek, endWeek, hourBudget);
-        this.projectBudget = projectBudget;
+        this.moneyBudget = moneyBudget;
 
     }
 
     public double calculateCostVariance() {
 
-        return projectBudget -
-
+        return moneyBudget - getTotalCost();
     }
+
     public double calculateEarnedValue() {
 
+        double earnedValue = (getCompletedTasks().size() / getTasks().size()) / moneyBudget;
+        //double earnedValue = taskPercentageCompleted / projectBudget;
+
+        return earnedValue;
     }
+
     public double calculateScheduleVariance() {
 
+        return calculateEarnedValue() - (hourBudget - getTotalHours());
     }
 
 
@@ -56,61 +62,51 @@ public class Project {
 
     public double getTotalCost() {
 
-
-    }
-
-    public int getRisk(Risk riskDescription) {
-
-        for(Risk desiredRisk : projectRisks) {
-
-            if(desiredRisk.getDescription().equals(riskDescription)) {
-
-                return desiredRisk.calculateRisk();
-            }
-        }
-        return RISK_NOT_FOUND;
-    }
-
-    public String getMembers() {
-        String information = "";
+        double totalCost = MINIMUM;
 
         for(Member currentMember : projectMembers) {
 
-            information = currentMember.getName() + ls;
+            totalCost = currentMember.getCostPerHour() * currentMember.getHoursWorked();
         }
 
-        return "Members within the project " + getName() + ":" + ls + information;
+        return totalCost;
     }
 
-    public String getTasks() {
-        String information = "";
-
-        for(Task currentTask : tasks) {
-
-            information = currentTask.getDescription() + ls;
-        }
-
-        return "The tasks within this project is:" + ls + information;
+    public ArrayList<Risk> getRisks() {
+        return projectRisks;
     }
 
+    public ArrayList<Member> getProjectMembers() {
+        return projectMembers;
+    }
 
-    public String getCompletedTasks() {
+    public ArrayList<Task> getTasks() {
+        return tasks;
+    }
+
+    public ArrayList<Task> getCompletedTasks() {
+
+        ArrayList<Task> completedTasks = new ArrayList<>();
+
         for (Task completedTask : tasks) {
-            if (completedTask.isCompleted == true) {      // need a getter to the boolean in task
-                return  completedTask.toString();
+            if(completedTask.isCompleted()) {
+
+                completedTasks.add(completedTask);
             }
         }
-        return "No completed tasks";
-
+        return completedTasks;
     }
 
-    public String getCurrentTasks() {  //return arraylist
+    public ArrayList<Task> getCurrentTasks() {
+
+        ArrayList<Task> currentTasks = new ArrayList<>();
+
         for (Task currentTask : tasks){
-            if (currentTask.isCompleted == false){   // need a getter to the boolean in Task
-                return currentTask.toString();
+            if (!currentTask.isCompleted()){
+                currentTasks.add(currentTask);
             }
         }
-        return "No current tasks";
+        return currentTasks;
     }
 
     public Member getMember(int id) {
@@ -122,7 +118,6 @@ public class Project {
                 return desiredMember;
             }
         }
-
         return null;
     }
 
@@ -138,7 +133,21 @@ public class Project {
         return null;
     }
 
-    public int getWeek() {
+
+    public Task getTask(String description) {
+
+        for(Task desiredTask : tasks) {
+
+            if(desiredTask.equals(description)) {
+
+                return desiredTask;
+            }
+        }
+        return null;
+    }
+
+
+    public int getAmountOfWeeks() {
 
         return schedule.calculateWeeks();
     }
@@ -147,15 +156,18 @@ public class Project {
 
         Member newMember = new Member (name, id, email, costPerHour);
         this.projectMembers.add(newMember);
-
     }
 
     public void addMemberToTask(String name, String description) {
 
+        Task desiredTask = getTask(description);
+        Member memberToAdd = getMember(name);
+
+        desiredTask.addMember(memberToAdd);
     }
 
-    public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
-        Task newTask = new Task(description,startWeek,endWeek,hourBudget,moneyBudget);
+    public void addTask(String description, int startWeek, int endWeek) {
+        Task newTask = new Task(description,startWeek,endWeek);
         tasks.add(newTask);
     }
 
@@ -164,7 +176,12 @@ public class Project {
         projectRisks.add(newRisk);
     }
 
-    public void setSchedule(int startWeek, int endWeek, double hourBudget) {
+
+    public Schedule getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(int startWeek, int endWeek) {
 
     }
 
@@ -172,18 +189,29 @@ public class Project {
         return name;
     }
 
-    public double getProjectBudget() {
-        return projectBudget;
-    }
-
     public void setName(String newName) {
 
+    }
+
+    public double getProjectBudget() {
+        return moneyBudget;
     }
 
     public void setProjectBudget(double newProjectBudget) {
 
     }
 
+    public void setProjectMembers(ArrayList<Member> projectMembers) {
+        this.projectMembers = projectMembers;
+    }
+
+    public void setTasks(ArrayList<Task> tasks) {
+        this.tasks = tasks;
+    }
+
+    public void setProjectRisks(ArrayList<Risk> projectRisks) {
+        this.projectRisks = projectRisks;
+    }
 
 
 
