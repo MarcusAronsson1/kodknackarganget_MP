@@ -13,34 +13,39 @@ public class Project {
     private ArrayList<Member> projectMembers;
     private ArrayList<Risk> projectRisks;
     private Schedule schedule;
-    private double projectBudget;
+    private double hourBudget;
+    private double moneyBudget;
 
 
 
 
-    public Project(String name, int startWeek, int endWeek, double hourBudget, double projectBudget) {
+    public Project(String name, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
 
         this.name = name;
         this.tasks = new ArrayList<>();
         this.projectMembers = new ArrayList<Member>();
         this.projectRisks = new ArrayList<>();
         this.schedule = new Schedule(startWeek, endWeek, hourBudget);
-        this.projectBudget = projectBudget;
+        this.moneyBudget = moneyBudget;
 
     }
 
     public double calculateCostVariance() {
 
-        return projectBudget - getTotalCost();
+        return moneyBudget - getTotalCost();
     }
 
     public double calculateEarnedValue() {
 
-        
+        double earnedValue = (getCompletedTasks().size() / getTasks().size()) / moneyBudget;
+        //double earnedValue = taskPercentageCompleted / projectBudget;
 
+        return earnedValue;
     }
+
     public double calculateScheduleVariance() {
 
+        return calculateEarnedValue() - (hourBudget - getTotalHours());
     }
 
     
@@ -67,7 +72,7 @@ public class Project {
         return totalCost;
     }
 
-    public ArrayList<Risk> getRisk() {
+    public ArrayList<Risk> getRisks() {
         return projectRisks;
     }
 
@@ -79,22 +84,29 @@ public class Project {
         return tasks;
     }
 
-    public String getCompletedTasks() {          //return arraylist
+    public ArrayList<Task> getCompletedTasks() {
+
+        ArrayList<Task> completedTasks = new ArrayList<>();
+
         for (Task completedTask : tasks) {
-            if (completedTask.isCompleted == true) {      // need a getter to the boolean in task
-                return  completedTask.toString();
+            if(completedTask.isCompleted()) {
+
+                completedTasks.add(completedTask);
             }
         }
-        return "No completed tasks";
+        return completedTasks;
     }
 
-    public String getCurrentTasks() {          //return arraylist
+    public ArrayList<Task> getCurrentTasks() {
+
+        ArrayList<Task> currentTasks = new ArrayList<>();
+
         for (Task currentTask : tasks){
-            if (currentTask.isCompleted == false){   // need a getter to the boolean in Task
-                return currentTask.toString();
+            if (!currentTask.isCompleted()){
+                currentTasks.add(currentTask);
             }
         }
-        return "No current tasks";
+        return currentTasks;
     }
 
     public Member getMember(int id) {
@@ -121,6 +133,7 @@ public class Project {
         return null;
     }
 
+
     public Task getTask(String description) {
 
         for(Task desiredTask : tasks) {
@@ -132,6 +145,7 @@ public class Project {
         }
         return null;
     }
+
 
     public int getAmountOfWeeks() {
 
@@ -152,8 +166,8 @@ public class Project {
         desiredTask.addMember(memberToAdd);
     }
 
-    public void addTask(String description, int startWeek, int endWeek, double hourBudget, double moneyBudget) {
-        Task newTask = new Task(description,startWeek,endWeek,hourBudget,moneyBudget);
+    public void addTask(String description, int startWeek, int endWeek) {
+        Task newTask = new Task(description,startWeek,endWeek);
         tasks.add(newTask);
     }
 
@@ -167,7 +181,7 @@ public class Project {
         return schedule;
     }
 
-    public void setSchedule(int startWeek, int endWeek, double hourBudget) {
+    public void setSchedule(int startWeek, int endWeek) {
 
     }
 
@@ -180,7 +194,7 @@ public class Project {
     }
 
     public double getProjectBudget() {
-        return projectBudget;
+        return moneyBudget;
     }
 
     public void setProjectBudget(double newProjectBudget) {
