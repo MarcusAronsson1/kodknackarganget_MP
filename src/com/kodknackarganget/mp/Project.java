@@ -25,7 +25,8 @@ public class Project {
         this.tasks = new ArrayList<>();
         this.projectMembers = new ArrayList<Member>();
         this.projectRisks = new ArrayList<>();
-        this.schedule = new Schedule(startWeek, endWeek, hourBudget);
+        this.schedule = new Schedule(startWeek, endWeek);
+        this.hourBudget = hourBudget;
         this.moneyBudget = moneyBudget;
 
     }
@@ -38,7 +39,6 @@ public class Project {
     public double calculateEarnedValue() {
 
         double earnedValue = (getCompletedTasks().size() / getTasks().size()) / moneyBudget;
-        //double earnedValue = taskPercentageCompleted / projectBudget;
 
         return earnedValue;
     }
