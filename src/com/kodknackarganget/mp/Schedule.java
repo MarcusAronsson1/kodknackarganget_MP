@@ -8,12 +8,15 @@ public class Schedule {
 
     private int startWeek;
     private int endWeek;
+    private double hourBudget;
 
 
-    public Schedule(int startWeek, int endWeek) {
+    public Schedule(int startWeek, int endWeek, double hourBudget) {
 
         this.startWeek = startWeek;
         this.endWeek = endWeek;
+        this.hourBudget = hourBudget;
+
     }
 
     public int calculateWeeks() {
@@ -34,11 +37,18 @@ public class Schedule {
     public int getEndWeek() {
         return endWeek;
     }
-    
+
+    public double getHourBudget() {
+        return hourBudget;
+    }
+
     public void setStartWeek(int newStartWeek) {
 
     }
     public void setEndWeek(int newEndWeek) {
+
+    }
+    public void setHourBudget(double newHourBudget) {
 
     }
 
