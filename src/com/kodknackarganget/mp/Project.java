@@ -32,6 +32,8 @@ public class Project {
 
     public double calculateCostVariance() {
 
+        return projectBudget -
+
     }
     public double calculateEarnedValue() {
 
@@ -39,30 +41,9 @@ public class Project {
     public double calculateScheduleVariance() {
 
     }
-    /* public int getTotalHours(Member member) {
 
-        int totalHours = INITIAL_HOURS;
-
-        for(Member member : projectMembers) {
-
-            totalHours += projectMembers.getHoursWorked;
-        } hey :)
-
-        return totalHours;
-    } */
-
-    public String getTotalHoursPerMember() {
-        String information = "";
-
-        for(Member currentMember : projectMembers) {
-
-            information = currentMember.getName() + " has worked a total of" + currentMember.getHoursWorked() + " hours." + ls;
-        }
-
-        return information;
-    }
-
-    public double totalProjectHours() {
+    
+    public double getTotalHours() {
         double totalHours = INITIAL_HOURS;
 
         for(Member currentMember : projectMembers) {
@@ -71,6 +52,11 @@ public class Project {
         }
 
         return totalHours;
+    }
+
+    public double getTotalCost() {
+
+
     }
 
     public int getRisk(Risk riskDescription) {
@@ -107,16 +93,6 @@ public class Project {
         return "The tasks within this project is:" + ls + information;
     }
 
-    public String getTotalTaskCost() {
-        double totalCost = MINIMUM_BUDGET;
-
-        for(Task currentTask : tasks) {
-
-            totalCost += currentTask.getMoneyBudget(); //I think moneyBudget the correct attribute to have here, if I understand the method correctly
-        }
-
-        return "The total cost of the tasks within this project is: " + totalCost + "SEK";
-    }
 
     public String getCompletedTasks() {
         for (Task completedTask : tasks) {
@@ -128,7 +104,7 @@ public class Project {
 
     }
 
-    public String getCurrentTasks() {
+    public String getCurrentTasks() {  //return arraylist
         for (Task currentTask : tasks){
             if (currentTask.isCompleted == false){   // need a getter to the boolean in Task
                 return currentTask.toString();
@@ -171,6 +147,10 @@ public class Project {
 
         Member newMember = new Member (name, id, email, costPerHour);
         this.projectMembers.add(newMember);
+
+    }
+
+    public void addMemberToTask(String name, String description) {
 
     }
 
