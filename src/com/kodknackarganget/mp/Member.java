@@ -1,7 +1,7 @@
 package com.kodknackarganget.mp;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 public class Member {
    private String name;
@@ -9,10 +9,10 @@ public class Member {
    private String email;
    private double costPerHour;
    private double hoursWorked;
-   private ArrayList<String> taskNames;
+   private ArrayList<String> taskNames;  // UML says it is suppose to be a String and not a Task in itself
    private final String END_OF_LINE = System.lineSeparator();
 
-  // private HashMap<String, Double> hoursWorked;
+
 
     public Member(String name, int id, String email, double costPerHour){
         this.name = name;
@@ -23,11 +23,11 @@ public class Member {
         this.taskNames = new ArrayList<>();
     }
 
-    public void addTask(String description){
-
+    public void addTask(String taskName){       // Have to add a String and not a task
+        this.taskNames.add(taskName);
     }
 
-    public void addHoursWorked(double hours){ // addHoursWorked for a member
+    public void addHoursWorked(double hours){
         hoursWorked += hours;
     }
 
@@ -56,7 +56,7 @@ public class Member {
         return hoursWorked;
     }
     @Override
-    public String toString() {
+    public String toString() {                  // Not really sure if we're going to need this since we have FX
         String info = "Name: "+name+" Id:"+id + END_OF_LINE +
                 "Email: "+email + END_OF_LINE+" Hours worked: "+hoursWorked;
         return info;
