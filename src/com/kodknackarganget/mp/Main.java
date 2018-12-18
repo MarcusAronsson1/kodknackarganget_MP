@@ -17,7 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("popups/addRisk.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("popups/createMember.fxml"));
 
         //primaryStage.setTitle("Main");
         primaryStage.setScene(new Scene(root));

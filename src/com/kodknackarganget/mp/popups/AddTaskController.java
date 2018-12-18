@@ -24,7 +24,7 @@ public class AddTaskController {
         saveBtn.setOnAction(e -> {
 
             if(startWeekField.getText().matches("\\d+") && endWeekField.getText().matches("\\d+")) {
-                Project.addTask(descriptionField.getText(), Integer.parseInt(startWeekField.getText()), Integer.parseInt(endWeekField.getText()));
+                //Project.addTask(descriptionField.getText(), Integer.parseInt(startWeekField.getText()), Integer.parseInt(endWeekField.getText()));
                 stage.close();
             }
         });

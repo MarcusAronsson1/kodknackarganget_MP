@@ -35,7 +35,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="38.0" layoutY="278.0" styleClass="font" text="c" textFill="WHITE">
+            <Label layoutX="38.0" layoutY="278.0" styleClass="font" text="Cost per hour" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -49,10 +49,5 @@
             <Button id="createBtn" fx:id="saveBtn" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" prefWidth="100.0" text="SAVE" />
          </children>
       </Pane>
-      <Label id="closeBtn" alignment="BASELINE_RIGHT" layoutX="432.0" styleClass="font" text="x">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

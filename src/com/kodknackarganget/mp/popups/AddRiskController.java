@@ -28,7 +28,7 @@ public class AddRiskController {
             String description = descriptionField.getText();
 
             if(!description.isEmpty()) {
-                Project.addRisk(description, probability, impact);
+                //Project.addRisk(description, probability, impact);
                 stage.close();
             }else{
                 descriptionField.setText("Field can't be empty.");
