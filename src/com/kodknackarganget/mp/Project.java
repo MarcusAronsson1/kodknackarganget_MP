@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 public class Project {
 
-    public static int INITIAL_HOURS = 0;
-    public static double MINIMUM = 0.0;
-    public static final String ls = System.lineSeparator();
+    public static final int INITIAL_HOURS = 0;
+    public static final double MINIMUM = 0.0;
 
     private String name;
     private ArrayList<Task> tasks;
@@ -25,25 +24,30 @@ public class Project {
         this.tasks = new ArrayList<>();
         this.projectMembers = new ArrayList<Member>();
         this.projectRisks = new ArrayList<>();
-        this.schedule = new Schedule(startWeek, endWeek, hourBudget);
+        this.schedule = new Schedule(startWeek,endWeek);
+        this.hourBudget = hourBudget;
         this.moneyBudget = moneyBudget;
 
     }
 
-    public double calculateCostVariance() {
+    public Project saveAndLoadProject(Project project){
+        return project;
+    }
 
+    public double calculateCostVariance() {
         return moneyBudget - getTotalCost();
     }
 
-    public double calculateEarnedValue() {
-
-        double earnedValue = (getCompletedTasks().size() / getTasks().size()) / moneyBudget;
-        //double earnedValue = taskPercentageCompleted / projectBudget;
-
-        return earnedValue;
+    public double calculateEarnedValue()throws Exception {
+        if(!tasks.isEmpty()){
+            double earnedValue = (getCompletedTasks().size() / getTasks().size()) * moneyBudget;
+            return earnedValue;
+        }else{
+            throw new Exception("No tasks added");
+        }
     }
 
-    public double calculateScheduleVariance() {
+    public double calculateScheduleVariance()throws Exception {
 
         return calculateEarnedValue() - (hourBudget - getTotalHours());
     }
@@ -56,7 +60,6 @@ public class Project {
 
             totalHours += currentMember.getHoursWorked();
         }
-
         return totalHours;
     }
 
@@ -66,7 +69,7 @@ public class Project {
 
         for(Member currentMember : projectMembers) {
 
-            totalCost = currentMember.getCostPerHour() * currentMember.getHoursWorked();
+            totalCost += currentMember.getCostPerHour() * currentMember.getHoursWorked();
         }
 
         return totalCost;
@@ -84,7 +87,7 @@ public class Project {
         return tasks;
     }
 
-    public ArrayList<Task> getCompletedTasks() {
+    public ArrayList<Task> getCompletedTasks()throws Exception {
 
         ArrayList<Task> completedTasks = new ArrayList<>();
 
@@ -94,10 +97,13 @@ public class Project {
                 completedTasks.add(completedTask);
             }
         }
+        if(completedTasks.isEmpty()){
+            throw new Exception("No tasks completed yet");
+        }
         return completedTasks;
     }
 
-    public ArrayList<Task> getCurrentTasks() {
+    public ArrayList<Task> getCurrentTasks()throws Exception {
 
         ArrayList<Task> currentTasks = new ArrayList<>();
 
@@ -106,10 +112,13 @@ public class Project {
                 currentTasks.add(currentTask);
             }
         }
+        if(currentTasks.isEmpty()){
+            throw new Exception("No current tasks");
+        }
         return currentTasks;
     }
 
-    public Member getMember(int id) {
+    public Member getMember(int id) throws Exception{
 
         for(Member desiredMember : projectMembers) {
 
@@ -118,32 +127,32 @@ public class Project {
                 return desiredMember;
             }
         }
-        return null;
+        throw new Exception("Member not found");
     }
 
-    public Member getMember(String name) {
+    public Member getMember(String name)throws Exception {
 
         for(Member desiredMember : projectMembers) {
 
-            if(desiredMember.getName().equals(name)) {
+            if(desiredMember.getName().equalsIgnoreCase(name)) {
 
                 return desiredMember;
             }
         }
-        return null;
+        throw new Exception("Member not found");
     }
 
 
-    public Task getTask(String description) {
+    public Task getTask(String description)throws Exception {
 
         for(Task desiredTask : tasks) {
 
-            if(desiredTask.equals(description)) {
+            if(desiredTask.getDescription().equalsIgnoreCase(description)) {
 
                 return desiredTask;
             }
         }
-        return null;
+        throw new Exception("Task not found");
     }
 
 
@@ -158,12 +167,12 @@ public class Project {
         this.projectMembers.add(newMember);
     }
 
-    public void addMemberToTask(String name, String description) {
+    public void addMemberToTask(int id, String description)throws Exception {
 
         Task desiredTask = getTask(description);
-        Member memberToAdd = getMember(name);
-
+        Member memberToAdd = getMember(id);
         desiredTask.addMember(memberToAdd);
+        memberToAdd.addTask(desiredTask.getDescription());
     }
 
     public void addTask(String description, int startWeek, int endWeek) {

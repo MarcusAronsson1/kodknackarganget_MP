@@ -8,9 +8,9 @@ public class Task {
     private String description;
     private boolean isCompleted;
 
-    public Task(String description, int startWeek, int endWeek, double hourBudget){
+    public Task(String description, int startWeek, int endWeek){
         this.taskMembers = new ArrayList<>();
-        this.schedule = new Schedule(startWeek,endWeek,hourBudget);
+        this.schedule = new Schedule(startWeek,endWeek);
         this.description = description;
         this.isCompleted = false;
     }

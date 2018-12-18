@@ -10,9 +10,6 @@ public class Member {
     private double costPerHour;
     private double hoursWorked;
     private ArrayList<String> taskNames;
-    private final String END_OF_LINE = System.lineSeparator();
-
-    // private HashMap<String, Double> hoursWorked;
 
     public Member(String name, int id, String email, double costPerHour){
         this.name = name;
@@ -23,8 +20,8 @@ public class Member {
         this.taskNames = new ArrayList<>();
     }
 
-    public void addTask(String description){
-
+    public void addTask(String taskName){       // Have to add a String and not a task
+        this.taskNames.add(taskName);
     }
 
     public void addHoursWorked(double hours){ // addHoursWorked for a member
@@ -54,12 +51,6 @@ public class Member {
 
     public double getHoursWorked() {
         return hoursWorked;
-    }
-    @Override
-    public String toString() {
-        String info = "Name: "+name+" Id:"+id + END_OF_LINE +
-                "Email: "+email + END_OF_LINE+" Hours worked: "+hoursWorked;
-        return info;
     }
 
 }
