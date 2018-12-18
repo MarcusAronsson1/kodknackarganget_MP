@@ -36,10 +36,11 @@ public class Schedule {
         return endWeek;
     }
 
-    public void setStartWeek(int newStartWeek) {
-
+    public void setStartWeek(int startWeek) {
+        this.startWeek = startWeek;
     }
-    public void setEndWeek(int newEndWeek) {
 
+    public void setEndWeek(int endWeek) {
+        this.endWeek = endWeek;
     }
 }

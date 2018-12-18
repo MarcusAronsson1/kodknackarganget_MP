@@ -11,9 +11,11 @@ public class Project {
     private ArrayList<Task> tasks;
     private ArrayList<Member> projectMembers;
     private ArrayList<Risk> projectRisks;
+    private ArrayList<Integer> takenIDs;
     private Schedule schedule;
     private double hourBudget;
     private double moneyBudget;
+
 
 
 
@@ -27,6 +29,7 @@ public class Project {
         this.schedule = new Schedule(startWeek,endWeek);
         this.hourBudget = hourBudget;
         this.moneyBudget = moneyBudget;
+        this.takenIDs = new ArrayList<>();
 
     }
 
@@ -161,8 +164,12 @@ public class Project {
         return schedule.calculateWeeks();
     }
 
-    public void addMember(String name, int id, String email, double costPerHour) {
-
+    public void addMember(String name, int id, String email, double costPerHour)throws Exception {
+        for(Member currentMember : projectMembers){
+            if(currentMember.getId() == id){
+                throw new Exception("There is already a member with this ID");
+            }
+        }
         Member newMember = new Member (name, id, email, costPerHour);
         this.projectMembers.add(newMember);
     }
@@ -185,13 +192,28 @@ public class Project {
         projectRisks.add(newRisk);
     }
 
+    public void addHoursToMember(Member member, double hours){
+        member.addHoursWorked(hours);
+    }
 
     public Schedule getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(int startWeek, int endWeek) {
+    public void setStartWeek(int startWeek) {
+        this.schedule.setStartWeek(startWeek);
+    }
 
+    public void setEndWeek(int endWeek){
+        this.schedule.setEndWeek(endWeek);
+    }
+
+    public int getStartWeek(){
+        return this.schedule.getStartWeek();
+    }
+
+    public int getEndweek(){
+        return this.schedule.getEndWeek();
     }
 
     public String getName() {
@@ -199,15 +221,15 @@ public class Project {
     }
 
     public void setName(String newName) {
-
+        this.name = newName;
     }
 
     public double getProjectBudget() {
         return moneyBudget;
     }
 
-    public void setProjectBudget(double newProjectBudget) {
-
+    public void setMoneyBudget(double newMoneyBudget) {
+        this.moneyBudget = newMoneyBudget;
     }
 
     public void setProjectMembers(ArrayList<Member> projectMembers) {
@@ -221,8 +243,5 @@ public class Project {
     public void setProjectRisks(ArrayList<Risk> projectRisks) {
         this.projectRisks = projectRisks;
     }
-
-
-
 }
 
