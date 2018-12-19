@@ -4,30 +4,28 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Member {
-    /*
-    String name;
-    int id;
-    String email;
-    double costPerHour;
-    ArrayList<String> taskNames;
-    HashMap<String, Integer> hoursWorked;
+    private String name;
+    private int id;
+    private String email;
+    private double costPerHour;
+    private double hoursWorked;
+    private ArrayList<String> taskNames;
 
     public Member(String name, int id, String email, double costPerHour){
         this.name = name;
         this.id = id;
         this.email = email;
         this.costPerHour = costPerHour;
-        this.hoursWorked = new HashMap<>();
+        this.hoursWorked = 0;
         this.taskNames = new ArrayList<>();
     }
 
-    public void addTask(String description){
-        //Should forward something from Task, I would assume :)
+    public void addTask(String taskName){       // Have to add a String and not a task
+        this.taskNames.add(taskName);
     }
 
-    public void addHoursWorked(String description, double hours){
-        getHoursWorked()
-        hoursWorked // Add something to it i guess? not really sure
+    public void addHoursWorked(double hours){ // addHoursWorked for a member
+        hoursWorked += hours;
     }
 
 
@@ -51,8 +49,8 @@ public class Member {
         return taskNames;
     }
 
-    public HashMap<String, Integer> getHoursWorked() {
+    public double getHoursWorked() {
         return hoursWorked;
     }
-    */
+
 }
