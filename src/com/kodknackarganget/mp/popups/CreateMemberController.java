@@ -79,7 +79,7 @@ public class CreateMemberController {
             }
 
             if(allInputsAreValid){
-                //project.addMember(name, id, mail, cost);
+                project.addMember(name, id, mail, cost);
                 stage.close();
             }
 
@@ -113,7 +113,7 @@ public class CreateMemberController {
 
     private boolean idIsTaken(int inputId){
 
-        ArrayList<Integer> takenIDs = null;//project.takenIds();
+        ArrayList<Integer> takenIDs = project.takenIds();
         if(takenIDs.contains(inputId)){
             idField.setStyle(errorTextColor);
             return true;

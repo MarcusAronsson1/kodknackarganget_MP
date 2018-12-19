@@ -20,7 +20,12 @@ public class AddRiskController {
     @FXML
     private Slider probSlider;
 
+    private String errorTextColor = "-fx-text-fill: red";
+    private String regTextColor = "-fx-text-fill: #D3E7F1";
+
     public void initialize() {
+
+        descriptionField.setOnKeyTyped(e -> descriptionField.setStyle(regTextColor));
 
         addBtn.setOnAction(e -> {
             int impact = (int) impactSlider.getValue();
@@ -28,11 +33,11 @@ public class AddRiskController {
             String description = descriptionField.getText();
 
             if(!description.isEmpty()) {
-                //Project.addRisk(description, probability, impact);
+                Project.addRisk(description, probability, impact);
                 stage.close();
             }else{
                 descriptionField.setText("Field can't be empty.");
-                descriptionField.setStyle("-fx-text-fill: red");
+                descriptionField.setStyle(errorTextColor);
             }
         });
 
