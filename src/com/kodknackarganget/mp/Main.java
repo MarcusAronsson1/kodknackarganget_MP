@@ -1,5 +1,4 @@
 package com.kodknackarganget.mp;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -27,9 +26,10 @@ public class Main extends Application {
         primaryStage.show();
 
     }
-
-
     public static void main(String[] args) {
+        readJSON loadProject = new readJSON();
+        Project kodknackargangetProject = loadProject.loadJSON();
+        kodknackargangetProject.loadProject();
         launch(args);
     }
 }
