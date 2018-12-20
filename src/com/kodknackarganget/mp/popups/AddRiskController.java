@@ -9,6 +9,8 @@ import static com.kodknackarganget.mp.Main.stage;
 
 public class AddRiskController {
 
+    private Project project;
+
     @FXML
     private TextField descriptionField;
     @FXML
@@ -33,7 +35,7 @@ public class AddRiskController {
             String description = descriptionField.getText();
 
             if(!description.isEmpty()) {
-                Project.addRisk(description, probability, impact);
+                project.addRisk(description, probability, impact);
                 stage.close();
             }else{
                 descriptionField.setText("Field can't be empty.");
@@ -44,6 +46,10 @@ public class AddRiskController {
         cancelBtn.setOnAction(e -> {
             stage.close();
         });
+    }
+
+    public void setProject(Project project){
+        this.project = project;
     }
 
 }

@@ -212,7 +212,7 @@ public class Project {
         return this.schedule.getStartWeek();
     }
 
-    public int getEndweek(){
+    public int getEndWeek(){
         return this.schedule.getEndWeek();
     }
 
@@ -230,6 +230,18 @@ public class Project {
 
     public void setMoneyBudget(double newMoneyBudget) {
         this.moneyBudget = newMoneyBudget;
+    }
+
+    public double getMoneyBudget() {
+        return moneyBudget;
+    }
+
+    public double getHourBudget() {
+        return hourBudget;
+    }
+
+    public void setHourBudget(double hourBudget) {
+        this.hourBudget = hourBudget;
     }
 
     public void setProjectMembers(ArrayList<Member> projectMembers) {

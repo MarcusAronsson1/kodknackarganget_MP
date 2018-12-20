@@ -1,5 +1,6 @@
 package com.kodknackarganget.mp;
 
+import com.kodknackarganget.mp.popups.AddRiskController;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -13,13 +14,20 @@ import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
+    private Project project;
+
     public static Stage stage;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("popups/createMember.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("popups/addRisk.fxml"));
+        Parent root = loader.load();
+        //Parent root = FXMLLoader.load(getClass().getResource("popups/addRisk.fxml"));
 
-        //primaryStage.setTitle("Main");
+        project = new Project("Projekt", 1, 5, 500, 10000);
+        AddRiskController addRiskController = loader.getController();
+        addRiskController.setProject(this.project);
+
         primaryStage.setScene(new Scene(root));
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.getScene().setFill(Color.TRANSPARENT);

@@ -8,6 +8,8 @@ import static com.kodknackarganget.mp.Main.stage;
 
 public class AddTaskController {
 
+    private Project project;
+
     @FXML
     private TextField descriptionField;
     @FXML
@@ -64,7 +66,7 @@ public class AddTaskController {
             }
 
             if(allInputsAreValid) {
-                Project.addTask(description, intStartWeek, intEndWeek);
+                project.addTask(description, intStartWeek, intEndWeek);
                 stage.close();
             }
         });

@@ -54,10 +54,6 @@ public class CreateMemberController {
             int id = 0;
             try{
                 id = convertStrToInt(idField.getText());
-                if(idIsTaken(id)){
-                    idField.setStyle(errorTextColor);
-                    allInputsAreValid = false;
-                }
             }catch (Exception exception){
                 idField.setText(exception.getMessage());
                 idField.setStyle(errorTextColor);
@@ -79,8 +75,13 @@ public class CreateMemberController {
             }
 
             if(allInputsAreValid){
-                project.addMember(name, id, mail, cost);
-                stage.close();
+                try {
+                    project.addMember(name, id, mail, cost);
+                    stage.close();
+                }catch (Exception exc){
+                    idField.setText(exc.getMessage());
+                    idField.setStyle(errorTextColor);
+                }
             }
 
 
@@ -108,18 +109,6 @@ public class CreateMemberController {
         }else{
             throw new Exception("Must be digits only.");
         }
-    }
-
-
-    private boolean idIsTaken(int inputId){
-
-        ArrayList<Integer> takenIDs = project.takenIds();
-        if(takenIDs.contains(inputId)){
-            idField.setStyle(errorTextColor);
-            return true;
-        }
-
-        return false;
     }
 
 }
