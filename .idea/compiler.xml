@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kodknackarganget_MP" target="7" />
+      <module name="kodknackarganget_MP" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

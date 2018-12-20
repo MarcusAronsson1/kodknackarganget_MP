@@ -9,17 +9,17 @@ import java.io.Reader;
 
 public class readJSON {
 
-    public void loadJSON(){
+    public Project loadJSON(){
 
         Gson gson = new Gson();
 
-        try (Reader reader = new FileReader("test.json")) {
+        try (Reader reader = new FileReader("DIT092.json")) {
 
             Project project = gson.fromJson(reader, Project.class); // Convert JSON to Java Object
-
+            return project;
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
         }
-
     }
 }
