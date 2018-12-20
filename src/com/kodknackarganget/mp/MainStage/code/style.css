@@ -13,10 +13,14 @@
 
 .buttonBox{
     -fx-background-color: transparent;
-    -fx-border-color: #e6e942;
+    -fx-border-color: #88e188;
     -fx-background-radius: 20px;
     -fx-border-radius: 20px;
-    -fx-text-fill: #e6e942;   
+    -fx-text-fill: #88e188;   
+}
+.buttonBox:hover{
+    -fx-sacle-y:1.1;
+    -fx-scale-x:1.1;
 }
 
 .borderlayout{
@@ -32,6 +36,13 @@
 -fx-background-radius: 30 2 30 2;
 -fx-background-color: #88e188;
 /*#86d66*/
+}
+
+.smallMemberBox{
+    -fx-border-raduis: 30 2 30 2;
+    -fx-background-radius: 30 2 30 2;
+    -fx-background-color: #88e188;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0.0 , 0 );
 }
 
 .exitButton{

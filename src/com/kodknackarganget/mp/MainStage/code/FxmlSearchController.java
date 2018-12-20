@@ -1,11 +1,16 @@
-package sample;
+package com.kodknackarganget.mp.MainStage.code;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class FxmlSearchController {
 
@@ -31,17 +36,25 @@ public class FxmlSearchController {
 
 
     public void onEnter(ActionEvent actionEvent) throws IOException {
-
+        TextField id = (TextField) actionEvent.getSource();
+        Image image = new Image("com/kodknackarganget/mp/MainStage/Img/marcusicon.png");
+        searchImage.setImage(image);
         searchImage.setOpacity(1);
-        searchIdLabel.setText("ID: 1337");
-        searchMailLabel.setText("Mail: august@gmail.com");
-        searchSalaryLabel.setText("Salary: 199 SEK/H");
-        searchHoursLabel.setText("Total Hours: 34");
+        searchIdLabel.setText("ID: "+id.getText());//member.getId();
+        searchMailLabel.setText("Mail: august@gmail.com");//member.getEmail();
+        searchSalaryLabel.setText("Salary: 199 SEK/H");//member.getSalary();
+        searchHoursLabel.setText("Total Hours: 34");//member.getHours();
 
-        searchIdLabel1.setText("ID: 1337");
-        searchMailLabel1.setText("Mail: august@gmail.com");
-        searchSalaryLabel1.setText("Salary: 199 SEK/H");
-        searchHoursLabel1.setText("Total Hours: 34");
+        searchIdLabel1.setText("Implement search function");//member.getTask();
+        searchMailLabel1.setText("Learn JavaFx");
+        searchSalaryLabel1.setText("Write new methods in member class");
+        searchHoursLabel1.setText("Plan after work");
+
+
+
 
     }
+
+
+
 }
