@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="memberStg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="800.0" styleClass="buttonlogout" stylesheets="@../sample/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FxmlMemberController">
+<AnchorPane fx:id="memberStg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="800.0" styleClass="buttonlogout" stylesheets="@../code/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.MainStage.code.FxmlMemberController">
    <children>
       <ImageView fitHeight="510.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/rocketbackground.png" />
+            <Image url="@../Img/rocketbackground.png" />
          </image>
       </ImageView>
       <Pane prefHeight="510.0" prefWidth="800.0">
          <children>
-            <Pane layoutX="280.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="280.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="31.0" layoutY="15.0" text="matilda@gmail.com" underline="true">
                      <font>
@@ -39,7 +39,7 @@
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="55.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="55.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="31.0" layoutY="15.0" text="marcus@gmail.com" underline="true">
                      <font>
@@ -62,7 +62,7 @@
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="510.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="510.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="37.0" layoutY="15.0" text="oskar@gmail.com" underline="true">
                      <font>
@@ -86,7 +86,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="280.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="280.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="34.0" layoutY="15.0" text="fredrik@gmail.com" underline="true">
                      <font>
@@ -106,7 +106,7 @@
                      </font></Label>
                </children>
             </Pane>
-            <Pane fx:id="memberPane1" layoutX="55.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane fx:id="memberPane1" layoutX="55.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" text="august@gmail.com" underline="true">
                      <font>
@@ -129,7 +129,7 @@
                      </font></Label>
                </children>
             </Pane>
-            <Pane layoutX="510.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="510.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="37.0" layoutY="15.0" text="adam@gmail.com" underline="true">
                      <font>
@@ -152,7 +152,7 @@
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="55.0" layoutY="370.0" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout">
+            <Pane layoutX="55.0" layoutY="370.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
                   <Label layoutX="37.0" layoutY="15.0" text="jacob@gmail.com" underline="true">
                      <font>
@@ -176,8 +176,8 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="280.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout" />
-            <Pane layoutX="510.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="paneLayout" />
+            <Pane layoutX="280.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox" />
+            <Pane layoutX="510.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox" />
             <Label layoutX="127.0" layoutY="29.0" text="AUGUST" />
             <Label layoutX="356.0" layoutY="195.0" text="MATILDA" />
             <Label layoutX="130.0" layoutY="195.0" text="MARCUS" />
