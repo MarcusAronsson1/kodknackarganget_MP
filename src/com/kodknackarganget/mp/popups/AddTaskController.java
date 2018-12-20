@@ -1,14 +1,12 @@
 package com.kodknackarganget.mp.popups;
 
-import com.kodknackarganget.mp.Project;
+import com.kodknackarganget.mp.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 import static com.kodknackarganget.mp.Main.stage;
 
-public class AddTaskController {
-
-    private Project project;
+public class AddTaskController extends Controller {
 
     @FXML
     private TextField descriptionField;
@@ -66,7 +64,7 @@ public class AddTaskController {
             }
 
             if(allInputsAreValid) {
-                project.addTask(description, intStartWeek, intEndWeek);
+                getProject().addTask(description, intStartWeek, intEndWeek);
                 stage.close();
             }
         });

@@ -1,18 +1,12 @@
 package com.kodknackarganget.mp.popups;
 
-import com.kodknackarganget.mp.Main;
-import com.kodknackarganget.mp.Project;
+import com.kodknackarganget.mp.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import static com.kodknackarganget.mp.Main.stage;
 
-public class EditProjectController {
-
-    private Project project;
+public class EditProjectController extends Controller {
 
     private String errorTextColor = "-fx-text-fill: red";
     private String regTextColor = "-fx-text-fill: #D3E7F1";
@@ -44,12 +38,6 @@ public class EditProjectController {
         hoursBudgetField.setOnKeyTyped(e -> hoursBudgetField.setStyle(regTextColor));
         moneyBudgetField.setOnKeyTyped(e -> moneyBudgetField.setStyle(regTextColor));
 
-        nameField.setText(project.getName());
-        startWeekField.setText(project.getStartWeek() + "");
-        endWeekField.setText(project.getEndWeek() + "");
-        hoursBudgetField.setText(project.getHourBudget() + "");
-        moneyBudgetField.setText(project.getMoneyBudget() + "");
-
         saveBtn.setOnAction(e -> {
             String projectName = nameField.getText();
             String startWeek = startWeekField.getText();
@@ -65,13 +53,13 @@ public class EditProjectController {
                 nameField.setText("Field can't be empty");
                 allInputsAreValid = false;
             } else {
-                project.setName(projectName);
+                getProject().setName(projectName);
             }
 
             //Trying to convert startWeek to int and checks if its a valid week
             try {
                 int intStartWeek = convertWeekToInt(startWeek);
-                project.setStartWeek(intStartWeek);
+                getProject().setStartWeek(intStartWeek);
             } catch (Exception exc) {
                 startWeekField.setStyle(errorTextColor);
                 startWeekField.setText(exc.getMessage());
@@ -80,7 +68,7 @@ public class EditProjectController {
             //same for endWeek
             try {
                 int intEndWeek = convertWeekToInt(endWeek);
-                project.setEndWeek(intEndWeek);
+                getProject().setEndWeek(intEndWeek);
             } catch (Exception exc) {
                 endWeekField.setStyle(errorTextColor);
                 endWeekField.setText(exc.getMessage());
@@ -89,7 +77,7 @@ public class EditProjectController {
 
             try {
                 double doubleHourBudget = convertStrToDouble(hourBudget);
-                project.setHourBudget(doubleHourBudget);
+                getProject().setHourBudget(doubleHourBudget);
             } catch (Exception exc) {
                 hoursBudgetField.setStyle(errorTextColor);
                 hoursBudgetField.setText(exc.getMessage());
@@ -98,7 +86,7 @@ public class EditProjectController {
 
             try {
                 double doubleMoneyBudget = convertStrToDouble(moneyBudget);
-                project.setMoneyBudget(doubleMoneyBudget);
+                getProject().setMoneyBudget(doubleMoneyBudget);
             } catch (Exception exc) {
                 moneyBudgetField.setStyle(errorTextColor);
                 moneyBudgetField.setText(exc.getMessage());
@@ -113,6 +101,7 @@ public class EditProjectController {
         cancelBtn.setOnAction(e -> {
             stage.close();
         });
+
     }
 
     public int convertWeekToInt(String week) throws Exception {
@@ -134,6 +123,14 @@ public class EditProjectController {
         } else {
             throw new Exception("Invalid input.");
         }
+    }
+
+    public void showCurrentProjectInfo(){
+        nameField.setText(getProject().getName());
+        startWeekField.setText(getProject().getStartWeek() + "");
+        endWeekField.setText(getProject().getEndWeek() + "");
+        hoursBudgetField.setText(getProject().getHourBudget() + "");
+        moneyBudgetField.setText(getProject().getMoneyBudget() + "");
     }
 
 }

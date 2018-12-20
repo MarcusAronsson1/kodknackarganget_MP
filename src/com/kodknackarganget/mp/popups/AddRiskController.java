@@ -1,5 +1,6 @@
 package com.kodknackarganget.mp.popups;
 
+import com.kodknackarganget.mp.Controller;
 import com.kodknackarganget.mp.Project;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -7,9 +8,7 @@ import javafx.scene.text.Font;
 
 import static com.kodknackarganget.mp.Main.stage;
 
-public class AddRiskController {
-
-    private Project project;
+public class AddRiskController extends Controller {
 
     @FXML
     private TextField descriptionField;
@@ -35,7 +34,7 @@ public class AddRiskController {
             String description = descriptionField.getText();
 
             if(!description.isEmpty()) {
-                project.addRisk(description, probability, impact);
+                getProject().addRisk(description, probability, impact);
                 stage.close();
             }else{
                 descriptionField.setText("Field can't be empty.");
@@ -46,10 +45,6 @@ public class AddRiskController {
         cancelBtn.setOnAction(e -> {
             stage.close();
         });
-    }
-
-    public void setProject(Project project){
-        this.project = project;
     }
 
 }

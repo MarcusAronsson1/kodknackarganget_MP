@@ -1,18 +1,15 @@
 package com.kodknackarganget.mp.popups;
 
-import com.kodknackarganget.mp.Project;
+import com.kodknackarganget.mp.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static com.kodknackarganget.mp.Main.stage;
 
-public class CreateMemberController {
-
-    private Project project;
+public class CreateMemberController extends Controller {
 
     @FXML
     private TextField nameField;
@@ -76,7 +73,7 @@ public class CreateMemberController {
 
             if(allInputsAreValid){
                 try {
-                    project.addMember(name, id, mail, cost);
+                    getProject().addMember(name, id, mail, cost);
                     stage.close();
                 }catch (Exception exc){
                     idField.setText(exc.getMessage());
