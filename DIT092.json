@@ -1,0 +1,89 @@
+{
+  "name": "kodknackarganget",
+  "tasks": [],
+  "projectMembers": [
+    {
+      "name": "Fredrik",
+      "id": 4420,
+      "email": "fredrik@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 0.0,
+      "taskNames": []
+    },
+    {
+      "name": "Matilda",
+      "id": 3232,
+      "email": "matilda@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 0.0,
+      "taskNames": []
+    },
+    {
+     "name": "August",
+     "id": 6969,
+     "email": "august@kkg.com",
+     "costPerHour": 199.0,
+     "hoursWorked": 0.0,
+     "taskNames": []
+   },
+
+    {
+      "name": "Oskar",
+      "id": 2256,
+      "email": "oskar@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 0.0,
+      "taskNames": []
+    },
+    {
+    "name": "Marcus",
+    "id": 1111,
+    "email": "marcus@kkg.com",
+    "costPerHour":199.0,
+   "hoursWorked": 0.0,
+      "taskNames": []
+    },
+    {
+     "name": "Adam",
+     "id": 1337,
+     "email": "adam@kkg.com",
+     "costPerHour": 199.0,
+     "hoursWorked": 0.0,
+     "taskNames": []
+   },
+   {
+     "name": "Jacob",
+     "id": 9235,
+     "email": "jacob@kkg.com",
+     "costPerHour": 199.0,
+     "hoursWorked": 0.0,
+     "taskNames": []
+   },
+
+  ],
+  "projectRisks": [
+    {
+      "description": "Lack of experience",
+      "probability": 8,
+      "impact": 7
+    },
+    {
+       "description": "Not documenting hours correctly",
+       "probability": 6,
+       "impact": 4
+     },
+     {
+      "description": "Poor teamwork",
+      "probability": 2,
+      "impact": 9
+    }
+
+  ],
+  "takenIDs": [],
+  "schedule": {
+    "startWeek": 2,
+    "endWeek": 5
+  },
+  "hourBudget": 400.0,
+  "moneyBudget": 148685.0
+}
