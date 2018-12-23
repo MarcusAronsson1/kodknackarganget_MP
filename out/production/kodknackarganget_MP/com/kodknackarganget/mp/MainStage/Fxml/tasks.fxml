@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="taskStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="800.0" stylesheets="@../code/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.MainStage.code.FxmlTasksController">
+   <children>
+      <ImageView fitHeight="510.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/rocketbackground.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="changePaneTask" prefHeight="510.0" prefWidth="800.0">
+         <children>
+            <Pane layoutY="50.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane fx:id="taskpane1" layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="testaug" fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn1" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox1" layoutX="17.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn2" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox2" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane layoutY="125.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn3" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox3" layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn4" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox4" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn5" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox5" layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn6" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox6" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane layoutY="275.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn7" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox7" layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn8" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox8" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane layoutY="350.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn9" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox9" layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn10" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox10" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane layoutY="425.0" prefHeight="55.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutX="56.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn11" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox11" layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#checkboxRight" />
+                  <Pane layoutX="432.0" layoutY="2.0" prefHeight="50.0" prefWidth="316.0" styleClass="taskBody">
+                     <children>
+                        <Label layoutX="21.0" layoutY="16.0" text="Implement search function" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/adamicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/marcusicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="225.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="picture">
+                           <image>
+                              <Image url="@../Img/augusticon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addBtn12" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="6.0" mnemonicParsing="false" onAction="#addMemberToTask" prefHeight="7.0" prefWidth="7.0" styleClass="addButtonTask" text="⊕" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="checkbox12" layoutX="770.0" layoutY="18.0" mnemonicParsing="false" onAction="#checkboxLeft" />
+               </children>
+            </Pane>
+            <Pane fx:id="addPane" layoutX="250.0" layoutY="5.0" opacity="0.0" prefHeight="43.0" prefWidth="300.0" styleClass="memberBoxes">
+               <children>
+                  <TextField fx:id="addMemberTask" layoutX="7.0" layoutY="6.0" onAction="#onEnter" promptText="member ID:" styleClass="searchboxes" />
+                  <Button fx:id="doneBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="6.0" mnemonicParsing="false" opacity="0.2" prefWidth="100.0" styleClass="buttonlogout" text="DONE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

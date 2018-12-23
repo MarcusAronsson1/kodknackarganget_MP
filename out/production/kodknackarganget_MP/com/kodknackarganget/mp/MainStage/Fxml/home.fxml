@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="800.0" stylesheets="@../code/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kodknackarganget.mp.MainStage.code.FxmlControllerHome">
+   <children>
+       <Pane fx:id="changePane" prefHeight="510.0" prefWidth="800.0" styleClass="Panetransparent">
+           <children>
+               <ImageView fitHeight="510.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" styleClass="body">
+                   <image>
+                       <Image url="@../Img/rocketbackground.png" />
+                   </image>
+               </ImageView>
+               <Pane layoutX="75.0" layoutY="24.0" prefHeight="130.0" prefWidth="650.0" styleClass="paneLayout">
+                   <children>
+                       <ProgressBar layoutX="125.0" layoutY="55.0" prefHeight="20.0" prefWidth="400.0" progress="0.32">
+                           <effect>
+                               <ColorAdjust hue="-0.19" />
+                           </effect>
+                       </ProgressBar>
+                   </children>
+               </Pane>
+               <Pane layoutX="150.0" layoutY="210.0" prefHeight="120.0" prefWidth="500.0" styleClass="borderlayout">
+                   <children>
+                       <Label layoutX="97.0" layoutY="50.0" text="BUDGET" textFill="#2c2c2c">
+                           <font>
+                               <Font name="Apple Braille" size="18.0" />
+                           </font>
+                       </Label>
+                       <Label layoutX="229.0" layoutY="50.0" text="10 000 SEK" textFill="#111111">
+                           <font>
+                               <Font size="18.0" />
+                           </font>
+                       </Label>
+                       <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="23.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@../Img/budgeticon.png" />
+                           </image>
+                           <effect>
+                               <ColorAdjust hue="-0.22" />
+                           </effect>
+                       </ImageView>
+                       <ProgressIndicator layoutX="408.0" layoutY="38.0" progress="0.63" scaleX="2.0" scaleY="2.0">
+                           <effect>
+                               <ColorAdjust hue="-0.2" />
+                           </effect>
+                       </ProgressIndicator>
+                   </children>
+               </Pane>
+               <Pane layoutX="150.0" layoutY="350.0" prefHeight="120.0" prefWidth="500.0" styleClass="paneLayout">
+                   <children>
+                       <Label layoutX="103.0" layoutY="46.0" text="RISK" textFill="WHITE">
+                           <font>
+                               <Font name="Apple Braille" size="18.0" />
+                           </font>
+                       </Label>
+                       <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="15.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                               <Image url="@../Img/riskicon1.png" />
+                           </image>
+                           <effect>
+                               <ColorAdjust brightness="1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                           </effect>
+                       </ImageView>
+                       <GridPane alignment="CENTER" layoutX="234.0" layoutY="15.0" prefHeight="90.0" prefWidth="256.0" styleClass="gridLines">
+                           <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="Probability" textAlignment="CENTER" textFill="WHITE" underline="true">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="Impact" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="4" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="1">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="5" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="2">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="6" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                   <font>
+                                       <Font size="15.0" />
+                                   </font>
+                               </Label>
+                           </children>
+                       </GridPane>
+                   </children>
+               </Pane>
+           </children>
+       </Pane>
+   </children>
+</AnchorPane>

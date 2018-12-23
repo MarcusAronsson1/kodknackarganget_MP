@@ -1,6 +1,9 @@
 package com.kodknackarganget.mp.MainStage.code;
 
 import static com.kodknackarganget.mp.MainStage.code.Main.stage;
+
+import com.kodknackarganget.mp.Project;
+import com.kodknackarganget.mp.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class FxmlMainController {
@@ -32,17 +36,36 @@ public class FxmlMainController {
     private Button but;
     @FXML
     private Button saveBtn;
+    @FXML
+    private Label budget;
 
-    public void setProg(double val) {
-        prog.setProgress(val);
+    private Project project;
 
+    public void setProg() {
+        ArrayList<Task> taskList = project.getTasks();
+        double numberOfCompletedTasks = 0;
+        for(Task currentTask : taskList){
+            if(currentTask.isCompleted()){
+                numberOfCompletedTasks += 1.0;
+            }
+        }
+        double progress = (numberOfCompletedTasks / taskList.size());
+        prog.setProgress(progress);
+    }
+
+    public void setProject(Project project){
+        this.project = project;
+    }
+
+    public void updateBudget(){
+        budget.setText(project.getMoneyBudget()+"");
     }
 
 
     public void initialize() {
 
         but.setOnAction(e -> {
-            setProg(prog.getProgress() + 0.1);
+            setProg();
         });
 
         exitBtn.setOnAction(e -> stage.close());
