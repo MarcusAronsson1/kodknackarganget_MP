@@ -15,21 +15,24 @@ public class Task {
         this.isCompleted = false;
     }
 
-    public void addMember(Member memberToBeAdded){
+    public void addMember(Member memberToBeAdded){     //Add member to task
         this.taskMembers.add(memberToBeAdded);
     }
 
-    public void setSchedule(int startWeek, int endWeek){
-        this.schedule.setStartWeek(startWeek);
-        this.schedule.setEndWeek(endWeek);
-    }
-
-    public void removeMember(Member memberToBeRemoved){
+    public void removeMember(Member memberToBeRemoved){     //Remove member from task
         for(Member currentMember : taskMembers){
             if(currentMember.getId() == memberToBeRemoved.getId()){
                 taskMembers.remove(currentMember);
             }
         }
+    }
+    
+    
+    
+    //Getters and Setters
+    public void setSchedule(int startWeek, int endWeek){
+        this.schedule.setStartWeek(startWeek);
+        this.schedule.setEndWeek(endWeek);
     }
 
     public int getWeeks(){
