@@ -33,12 +33,12 @@ public class Project {
 
     }
 
-    public void saveProject(Project project){
+    public void saveProject(Project project){       //<add comment here>
         writeJSON saveProject = new writeJSON();
         saveProject.saveJSON(project);
     }
 
-    public Project loadProject(){
+    public Project loadProject(){                   //<add comment here>
         readJSON loadProject = new readJSON();
         return loadProject.loadJSON();
     }
@@ -47,7 +47,7 @@ public class Project {
         return moneyBudget - getTotalCost();
     }
 
-    public double calculateEarnedValue()throws Exception {
+    public double calculateEarnedValue()throws Exception {      //Calculating the Earned Value of the project by taking how much of the project has been completed in percentage and multiply it with the budget of the project in SEK
         if(!tasks.isEmpty()){
             double earnedValue = (getCompletedTasks().size() / getTasks().size()) * moneyBudget;
             return earnedValue;
@@ -56,13 +56,13 @@ public class Project {
         }
     }
 
-    public double calculateScheduleVariance()throws Exception {
+    public double calculateScheduleVariance()throws Exception {      //Calculating the Schedule Variance of the project by subtracting the projects budget in hours and the total amount of hours worked so far within the project, from the Earned Value 
 
         return calculateEarnedValue() - (hourBudget - getTotalHours());
     }
 
 
-    public double getTotalHours() {
+    public double getTotalHours() {         //Calculating the total hours spent on the project based on the amount of hours each member has worked
         double totalHours = INITIAL_HOURS;
 
         for(Member currentMember : projectMembers) {
@@ -72,7 +72,7 @@ public class Project {
         return totalHours;
     }
 
-    public double getTotalCost() {
+    public double getTotalCost() {        //Calculating the total cost of the project based on each members cost per hour and the amount of hours they have worked
 
         double totalCost = MINIMUM;
 
@@ -84,19 +84,19 @@ public class Project {
         return totalCost;
     }
 
-    public ArrayList<Risk> getRisks() {
+    public ArrayList<Risk> getRisks() {       //Arraylist containing the risks of the project
         return projectRisks;
     }
 
-    public ArrayList<Member> getProjectMembers() {
+    public ArrayList<Member> getProjectMembers() {      //Arraylist containing the members within the project
         return projectMembers;
     }
 
-    public ArrayList<Task> getTasks() {
+    public ArrayList<Task> getTasks() {         //Arraylist containing the tasks within the project
         return tasks;
     }
 
-    public ArrayList<Task> getCompletedTasks()throws Exception {
+    public ArrayList<Task> getCompletedTasks()throws Exception {     //Arraylist containing the tasks which has been completed within the project
 
         ArrayList<Task> completedTasks = new ArrayList<>();
 
@@ -112,7 +112,7 @@ public class Project {
         return completedTasks;
     }
 
-    public ArrayList<Task> getCurrentTasks()throws Exception {
+    public ArrayList<Task> getCurrentTasks()throws Exception {     //Arraylist containing the tasks which has yet to be completed within the project
 
         ArrayList<Task> currentTasks = new ArrayList<>();
 
@@ -127,7 +127,7 @@ public class Project {
         return currentTasks;
     }
 
-    public Member getMember(int id) throws Exception{
+    public Member getMember(int id) throws Exception{      //Identifies a member based on their ID
 
         for(Member desiredMember : projectMembers) {
 
@@ -139,7 +139,7 @@ public class Project {
         throw new Exception("Member not found");
     }
 
-    public Member getMember(String name)throws Exception {
+    public Member getMember(String name)throws Exception {    //Identifies a member based on their name
 
         for(Member desiredMember : projectMembers) {
 
@@ -152,7 +152,7 @@ public class Project {
     }
 
 
-    public Task getTask(String description)throws Exception {
+    public Task getTask(String description)throws Exception {     //Finds a task based on its description
 
         for(Task desiredTask : tasks) {
 
@@ -165,12 +165,12 @@ public class Project {
     }
 
 
-    public int getAmountOfWeeks() {
+    public int getAmountOfWeeks() {      //Calculating the duration of the project in weeks
 
         return schedule.calculateWeeks();
     }
 
-    public void addMember(String name, int id, String email, double costPerHour)throws Exception {
+    public void addMember(String name, int id, String email, double costPerHour)throws Exception {    //Add member to project, makes sure that two members with the same ID can not be added
         for(Member currentMember : projectMembers){
             if(currentMember.getId() == id){
                 throw new Exception("There is already a member with this ID");
@@ -180,7 +180,7 @@ public class Project {
         this.projectMembers.add(newMember);
     }
 
-    public void addMemberToTask(int id, String description)throws Exception {
+    public void addMemberToTask(int id, String description)throws Exception {    //Adding a member to a task and the task to the member
 
         Task desiredTask = getTask(description);
         Member memberToAdd = getMember(id);
@@ -188,20 +188,23 @@ public class Project {
         memberToAdd.addTask(desiredTask.getDescription());
     }
 
-    public void addTask(String description, int startWeek, int endWeek) {
+    public void addTask(String description, int startWeek, int endWeek) {    //Adding a task to the project
         Task newTask = new Task(description,startWeek,endWeek);
         tasks.add(newTask);
     }
 
-    public void addRisk(String description, int impact, int probability) {
+    public void addRisk(String description, int impact, int probability) {     //Adding a risk to the project
         Risk newRisk = new Risk(description,impact,probability);
         projectRisks.add(newRisk);
     }
 
-    public void addHoursToMember(Member member, double hours){
+    public void addHoursToMember(Member member, double hours){     //Adding hours to the total amount of hours worked by a member
         member.addHoursWorked(hours);
     }
 
+    
+    
+    //Getters and Setters
     public Schedule getSchedule() {
         return schedule;
     }
