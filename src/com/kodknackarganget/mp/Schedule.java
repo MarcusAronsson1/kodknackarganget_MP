@@ -17,7 +17,7 @@ public class Schedule {
         this.endWeek = endWeek;
     }
 
-    public int calculateWeeks() {
+    public int calculateWeeks() {         //Calculating the duration of the project in weeks
 
         if(endWeek - startWeek == LESS_LESS_THAN_ONE_WEEK) {
 
@@ -28,6 +28,8 @@ public class Schedule {
     }
 
 
+    
+    //Getters and Setters
     public int getStartWeek(){
         return startWeek;
     }
