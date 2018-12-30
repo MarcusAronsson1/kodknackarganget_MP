@@ -18,10 +18,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         this.project = new Project("projekt", 1, 5, 500, 99999);
-        project.addTask("klia sig på balle", 1, 3);
-        project.addTask("öva git", 5, 7);
-        project.getTask("öva git").setCompleted(true);
-        project.getTask("klia sig på balle").setCompleted(true);
+        this.project = project.loadProject();
+        System.out.println(project.getName());
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXML/main.fxml"));
         Parent root = loader.load();

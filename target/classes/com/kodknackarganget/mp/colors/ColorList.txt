@@ -1,0 +1,9 @@
+09 3C 88
+9E CA E1
+07 30 6B background
+9E CA E1
+6B AE D6 font
+42 92 C6
+21 71 B5
+07 51 9C buttons
+07 30 6B background

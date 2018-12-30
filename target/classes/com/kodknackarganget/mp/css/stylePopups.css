@@ -1,0 +1,60 @@
+.root { 
+	-fx-background-color: transparent; 
+}
+
+.mainBackground {
+	-fx-background-color: linear-gradient(from 0% 100% to 50% 0%, #07306B, #093C88);
+	-fx-background-radius:2%;
+	-fx-border-radius:2%;
+	-fx-border-color: #06295E;
+	-fx-border-width: 1px;
+	/*-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);*/
+}
+
+.textField {
+	-fx-background-color: transparent;
+	-fx-border-color: #D3E7F1;
+	-fx-border-radius: 20px;
+	-fx-border-width: 1px;
+	-fx-border-insets: 0;
+	-fx-text-fill: #D3E7F1;
+}
+
+.font {
+	-fx-text-fill: #D3E7F1;
+}
+
+.header {
+	-fx-text-fill: #D3E7F1;
+	-fx-font-size: 34px;
+}
+
+.button {
+	-fx-background-color: linear-gradient(from 50% 100% to 50% 0%, #07519C, #2171B5);
+	-fx-text-fill: #D3E7F1;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(from 50% 100% to 50% 0%, #06417c, #1c629e);
+    -fx-text-fill: #D3E7F1;
+}
+
+.dropDown {
+	-fx-background-color: transparent;
+	-fx-background-radius: 20px;
+	-fx-text-fill: #D3E7F1;
+	-fx-border-color: #D3E7F1;
+	-fx-border-radius: 20px;
+	-fx-border-width: 1px;
+	-fx-border-insets: 0;
+}
+
+.sliders {
+	-fx-show-tick-marks: true;
+	-fx-show-tick-labels: true;
+	-fx-major-tick-unit: 1;
+	-fx-minor-tick-count: 0;
+	-fx-snap-to-ticks: true;
+}
+
+.slider .axis { -fx-tick-label-fill: #D3E7F1; }
