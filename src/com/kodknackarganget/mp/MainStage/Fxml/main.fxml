@@ -169,7 +169,7 @@
                </effect>
             </ImageView>
             <Separator layoutX="100.0" layoutY="10.0" orientation="VERTICAL" prefHeight="70.0" />
-            <Label alignment="TOP_CENTER" layoutX="330.0" layoutY="25.0" text="DASHBORD" textFill="#434343">
+            <Label fx:id="mainLabel" alignment="TOP_CENTER" layoutX="240.0" layoutY="27.0" prefHeight="37.0" prefWidth="320.0" text="MINI PROJECT" textFill="#434343">
                <font>
                   <Font name="Apple Braille" size="30.0" />
                </font>

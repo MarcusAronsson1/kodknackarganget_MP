@@ -31,7 +31,7 @@ public class FxmlTasksController {
             box.setOpacity(0.5);
             Node test = box.getParent().getChildrenUnmodifiable().get(0);
             test.setOpacity(0.5);
-            //getTask(taskpane1.getName()).isCompleted(true);
+            //getTask(task.getName()).isCompleted(true);
         } else {
             box.setOpacity(1);
             Node test = box.getParent().getChildrenUnmodifiable().get(0);
@@ -47,7 +47,7 @@ public class FxmlTasksController {
             box.setOpacity(0.5);
             Node test = box.getParent().getChildrenUnmodifiable().get(2);
             test.setOpacity(0.5);
-            //getTask(taskpane1.getName()).isCompleted(true);
+            //getTask(task.getName()).isCompleted(true);
         } else {
             box.setOpacity(1);
             Node test = box.getParent().getChildrenUnmodifiable().get(2);
@@ -57,7 +57,9 @@ public class FxmlTasksController {
 
     public void addMemberToTask(ActionEvent actionEvent) {
         Button button = (Button) actionEvent.getSource();
+        //button.getParent().getChildrenUnmodifiable().get();
         addPane.setOpacity(1);
+
     }
 
 

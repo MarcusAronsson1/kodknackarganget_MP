@@ -32,6 +32,9 @@ public class FxmlMainController {
     private Button but;
     @FXML
     private Button saveBtn;
+    @FXML
+    private Label mainLabel;
+
 
     public void setProg(double val) {
         prog.setProgress(val);
@@ -60,6 +63,7 @@ public class FxmlMainController {
         });
 
         memberBtn.setOnAction(e -> {
+            mainLabel.setText("MEMBERS");
             try {
                 changePane.getChildren().clear();
                 Parent member = FXMLLoader.load(getClass().getResource("../FXML/member.fxml"));
@@ -70,6 +74,7 @@ public class FxmlMainController {
         });
 
         taskBtn.setOnAction(e -> {
+            mainLabel.setText("TASKS");
             try {
                 changePane.getChildren().clear();
                 Parent task = FXMLLoader.load(getClass().getResource("../FXML/tasks.fxml"));
@@ -80,6 +85,7 @@ public class FxmlMainController {
         });
 
         searchBtn.setOnAction(e -> {
+            mainLabel.setText("SEARCH");
             try {
                 changePane.getChildren().clear();
                 Parent search = FXMLLoader.load(getClass().getResource("../FXML/search.fxml"));
