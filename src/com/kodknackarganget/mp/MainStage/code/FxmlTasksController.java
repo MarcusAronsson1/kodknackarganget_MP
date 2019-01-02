@@ -1,15 +1,15 @@
 package com.kodknackarganget.mp.MainStage.code;
 
+import com.kodknackarganget.mp.Project;
+import com.kodknackarganget.mp.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import java.io.IOException;
-
+import java.util.ArrayList;
 
 public class FxmlTasksController {
 
@@ -20,74 +20,83 @@ public class FxmlTasksController {
     @FXML
     private Button doneBtn;
     @FXML
-    private ImageView testaug;
+    private Pane changePaneTask;
 
+    private Project project;
 
-    public void checkboxRight(ActionEvent actionEvent) {
+    private ArrayList<Task> tasks;
 
-        CheckBox box = (CheckBox) actionEvent.getSource();
-        box.setId(box.getId());
-        if (box.isSelected()) {
-            box.setOpacity(0.5);
-            Node test = box.getParent().getChildrenUnmodifiable().get(0);
-            test.setOpacity(0.5);
-            //getTask(taskpane1.getName()).isCompleted(true);
-        } else {
-            box.setOpacity(1);
-            Node test = box.getParent().getChildrenUnmodifiable().get(0);
-            test.setOpacity(1);
+    private String taskDescription;
+
+    private final int MAX_AMOUNT_TASKS = 12;
+    private final String VALID_INT_REGEX = "\\d+";
+
+    public void setProject(Project project){
+        this.project = project;
+        this.tasks = project.getTasks();
+    }
+
+    public void updateTaskList(){
+        for(int i = 0; i < MAX_AMOUNT_TASKS && i < tasks.size(); i++) {
+            Pane taskPane = (Pane) changePaneTask.getChildren().get(i);
+            Label taskLabel = (Label) taskPane.getChildren().get(0);
+            taskLabel.setText(tasks.get(i).getDescription());
+            if(tasks.get(i).isCompleted()){
+                taskPane.setOpacity(0.5);
+                CheckBox checkBox = (CheckBox)taskPane.getChildren().get(1);
+                checkBox.setSelected(true);
+            }else{
+                taskPane.setOpacity(1);
+                CheckBox checkBox = (CheckBox)taskPane.getChildren().get(1);
+                checkBox.setSelected(false);
+            }
         }
     }
 
-    public void checkboxLeft(ActionEvent actionEvent) {
+    public void completeTask(ActionEvent actionEvent) {
 
         CheckBox box = (CheckBox) actionEvent.getSource();
-        box.setId(box.getId());
-        if (box.isSelected()) {
-            box.setOpacity(0.5);
-            Node test = box.getParent().getChildrenUnmodifiable().get(2);
-            test.setOpacity(0.5);
-            //getTask(taskpane1.getName()).isCompleted(true);
-        } else {
-            box.setOpacity(1);
-            Node test = box.getParent().getChildrenUnmodifiable().get(2);
-            test.setOpacity(1);
+        Label taskLabel = (Label)box.getParent().getChildrenUnmodifiable().get(0);
+        String taskDescription = taskLabel.getText();
+        try {
+            if(box.isSelected()) {
+                project.getTask(taskDescription).setCompleted(true);
+                box.getParent().setOpacity(0.5);
+            }else{
+                project.getTask(taskDescription).setCompleted(false);
+                box.getParent().setOpacity(1);
+            }
+        }catch (Exception exc){
+            exc.printStackTrace();
         }
     }
 
     public void addMemberToTask(ActionEvent actionEvent) {
         Button button = (Button) actionEvent.getSource();
+        Label taskLabel = (Label)button.getParent().getChildrenUnmodifiable().get(0);
+        taskDescription = taskLabel.getText();
         addPane.setOpacity(1);
     }
-
 
     public void initialize() {
 
         doneBtn.setOnAction(e -> {
-            addPane.setOpacity(0);
+            if(addMemberTask.getText().matches(VALID_INT_REGEX)) {
+                String strId = addMemberTask.getText();
+                int id = Integer.parseInt(strId);
+                try {
+                    project.addMemberToTask(id, taskDescription);
+                    addPane.setOpacity(0);
+                    addMemberTask.setText("");
+                } catch (Exception exc) {
+                    addMemberTask.setText(exc.getMessage());
+                }
+            }else{
+                addMemberTask.setText("Invalid input.");
+            }
         });
     }
 
-
-    public void onEnter(ActionEvent actionEvent) throws IOException {
-
-        if (addMemberTask.getText().equals("1337")) {
-            //testaug.setOpacity(1);
-            doneBtn.setOpacity(1);
-            Node imageView = testaug.getParent().getChildrenUnmodifiable().get(3);
-            imageView.setOpacity(1);
-            // String ID = addMemberTask.getText();
-            //task.addMember(ID);
-            addMemberTask.clear();
-        } else {
-            doneBtn.setOpacity(1);
-            // String ID = addMemberTask.getText();
-            //task.addMember(ID);
-            addMemberTask.clear();
-            Node imageView = testaug.getParent().getChildrenUnmodifiable().get(3);
-            imageView.setOpacity(1);
-        }
-    }
 
 
 }

@@ -3,23 +3,110 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="d">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIT092.json" beforeDir="false" afterPath="$PROJECT_DIR$/DIT092.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kodknackarganget_MP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kodknackarganget_MP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/FxmlMainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/code/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/Risk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/AddTaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/CreateMemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/EditProjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/addRiskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/addRisk.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/addTask.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/createMember.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/editProject.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/AddRiskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/AddTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/CreateMemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/EditProjectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/writeJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/writeJSON.class" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +178,9 @@
         <counts>
           <entry key="css" value="43" />
           <entry key="dummy" value="1" />
-          <entry key="fxml" value="43" />
-          <entry key="java" value="9681" />
+          <entry key="fxml" value="45" />
+          <entry key="java" value="14310" />
+          <entry key="json" value="140" />
           <entry key="txt" value="1" />
           <entry key="xml" value="25" />
         </counts>
@@ -100,18 +188,19 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="JAVA" value="9681" />
+          <entry key="JAVA" value="14310" />
+          <entry key="JSON" value="140" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="68" />
+          <entry key="XML" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="7" />
-          <entry key="fxml" value="14" />
+          <entry key="fxml" value="19" />
           <entry key="iml" value="1" />
-          <entry key="java" value="36" />
-          <entry key="json" value="1" />
+          <entry key="java" value="60" />
+          <entry key="json" value="2" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
           <entry key="xml" value="2" />
@@ -121,10 +210,10 @@
         <counts>
           <entry key="CSS" value="7" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="36" />
-          <entry key="JSON" value="1" />
+          <entry key="JAVA" value="60" />
+          <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="21" />
         </counts>
       </usages-collector>
     </session>
@@ -134,11 +223,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="340">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,28 +236,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-916">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            <state relative-caret-position="170">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#2546#2547#0" expanded="true" />
+                <element signature="e#2581#2582#0" expanded="true" />
+                <element signature="e#2633#2634#0" expanded="true" />
+                <element signature="e#2670#2671#0" expanded="true" />
+                <element signature="e#2711#2712#0" expanded="true" />
+                <element signature="e#2739#2740#0" expanded="true" />
+                <element signature="e#5695#5696#0" expanded="true" />
+                <element signature="e#5739#5740#0" expanded="true" />
+                <element signature="e#5776#5777#0" expanded="true" />
+                <element signature="e#5807#5808#0" expanded="true" />
+                <element signature="e#5854#5855#0" expanded="true" />
+                <element signature="e#5907#5908#0" expanded="true" />
+                <element signature="e#5950#5951#0" expanded="true" />
+                <element signature="e#5999#6000#0" expanded="true" />
+                <element signature="e#6032#6033#0" expanded="true" />
+                <element signature="e#6083#6084#0" expanded="true" />
+                <element signature="e#6114#6115#0" expanded="true" />
+                <element signature="e#6163#6164#0" expanded="true" />
+                <element signature="e#6194#6195#0" expanded="true" />
+                <element signature="e#6221#6222#0" expanded="true" />
+                <element signature="e#6264#6265#0" expanded="true" />
+                <element signature="e#6299#6300#0" expanded="true" />
+                <element signature="e#6339#6340#0" expanded="true" />
+                <element signature="e#6373#6374#0" expanded="true" />
+                <element signature="e#6430#6431#0" expanded="true" />
+                <element signature="e#6479#6480#0" expanded="true" />
+                <element signature="e#6517#6518#0" expanded="true" />
+                <element signature="e#6551#6552#0" expanded="true" />
+                <element signature="e#6588#6589#0" expanded="true" />
+                <element signature="e#6621#6622#0" expanded="true" />
+                <element signature="e#6673#6674#0" expanded="true" />
+                <element signature="e#6717#6718#0" expanded="true" />
+                <element signature="e#6788#6789#0" expanded="true" />
+                <element signature="e#6840#6841#0" expanded="true" />
+                <element signature="e#6891#6892#0" expanded="true" />
+                <element signature="e#6925#6926#0" expanded="true" />
+                <element signature="e#6990#6991#0" expanded="true" />
+                <element signature="e#7038#7039#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/readJSON.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="87">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -176,76 +310,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="221">
+              <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
+                <element signature="e#2356#2357#0" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#1777#1778#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/CreateMemberController.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlEcoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+            <state relative-caret-position="19">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/EditProjectController.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/editProject.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="-221">
+              <caret line="209" column="66" selection-start-line="209" selection-start-column="66" selection-end-line="209" selection-end-column="66" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/addRisk.fxml">
+        <entry file="file://$PROJECT_DIR$/DIT092.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="-20024">
+              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -253,8 +374,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -262,6 +383,7 @@
     <findStrings>
       <find>desc</find>
       <find>hourbudg</find>
+      <find>addmem</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -286,17 +408,27 @@
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/createMember.fxml" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Member.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Task.java" />
-        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddRiskController.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/CreateMemberController.java" />
-        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/editProject.fxml" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Controller.java" />
-        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/EditProjectController.java" />
-        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" />
+        <option value="$PROJECT_DIR$/DIT092.json" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/economics.fxml" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlEcoController.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" />
         <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" />
       </list>
     </option>
   </component>
@@ -357,10 +489,10 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546171879443" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546457763958" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../programming projects/testProjectFX" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -512,7 +644,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17919463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17919463" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -522,7 +654,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32844576" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32844576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -694,17 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Schedule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -716,49 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-185">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="2262" column="17" selection-start-line="2262" selection-start-column="17" selection-end-line="2262" selection-end-column="17" />
-          <folding>
-            <element signature="e#86610#86611#0" expanded="true" />
-            <element signature="e#86646#86647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -788,23 +866,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/EditProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -816,38 +877,6 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -855,36 +884,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/CreateMemberController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DIT092.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        <state relative-caret-position="136">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -895,12 +923,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="158">
+          <caret line="2470" selection-start-line="2470" selection-end-line="2470" />
+          <folding>
+            <element signature="e#86610#86611#0" expanded="true" />
+            <element signature="e#86646#86647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/EditProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="176" column="14" lean-forward="true" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/economics.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="209" column="66" selection-start-line="209" selection-start-column="66" selection-end-line="209" selection-end-column="66" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="282" column="15" selection-start-line="282" selection-start-column="15" selection-end-line="282" selection-end-column="15" />
+          <folding>
+            <element signature="e#10586#10587#0" expanded="true" />
+            <element signature="e#10613#10614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DIT092.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20024">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/CreateMemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlEcoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-916">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
+            <element signature="e#2711#2712#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#5695#5696#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+            <element signature="e#5776#5777#0" expanded="true" />
+            <element signature="e#5807#5808#0" expanded="true" />
+            <element signature="e#5854#5855#0" expanded="true" />
+            <element signature="e#5907#5908#0" expanded="true" />
+            <element signature="e#5950#5951#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6032#6033#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6114#6115#0" expanded="true" />
+            <element signature="e#6163#6164#0" expanded="true" />
+            <element signature="e#6194#6195#0" expanded="true" />
+            <element signature="e#6221#6222#0" expanded="true" />
+            <element signature="e#6264#6265#0" expanded="true" />
+            <element signature="e#6299#6300#0" expanded="true" />
+            <element signature="e#6339#6340#0" expanded="true" />
+            <element signature="e#6373#6374#0" expanded="true" />
+            <element signature="e#6430#6431#0" expanded="true" />
+            <element signature="e#6479#6480#0" expanded="true" />
+            <element signature="e#6517#6518#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6588#6589#0" expanded="true" />
+            <element signature="e#6621#6622#0" expanded="true" />
+            <element signature="e#6673#6674#0" expanded="true" />
+            <element signature="e#6717#6718#0" expanded="true" />
+            <element signature="e#6788#6789#0" expanded="true" />
+            <element signature="e#6840#6841#0" expanded="true" />
+            <element signature="e#6891#6892#0" expanded="true" />
+            <element signature="e#6925#6926#0" expanded="true" />
+            <element signature="e#6990#6991#0" expanded="true" />
+            <element signature="e#7038#7039#0" expanded="true" />
           </folding>
         </state>
       </provider>

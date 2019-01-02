@@ -1,65 +1,1286 @@
 {
   "name": "kodknackarganget",
-  "tasks": [],
+  "tasks": [
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 78.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4",
+            "FX"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 78.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4",
+            "FX"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 78.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4",
+            "FX",
+            "FX"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 5,
+        "endWeek": 15
+      },
+      "description": "FX",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 7,
+        "endWeek": 13
+      },
+      "description": "Code",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 15
+      },
+      "description": "J-son",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 15
+      },
+      "description": "Management meeting 1",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 15
+      },
+      "description": "Management meeting 2",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 15
+      },
+      "description": "Management meeting 3",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 15
+      },
+      "description": "Management meeting 4",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 2,
+        "endWeek": 4
+      },
+      "description": "Assignment 1",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 4,
+        "endWeek": 6
+      },
+      "description": "Assignment 2",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Adam",
+          "id": 1337,
+          "email": "adam@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "J-son",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Oskar",
+          "id": 2256,
+          "email": "oskar@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 2,
+        "endWeek": 8
+      },
+      "description": "Learn git",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "Jacob",
+          "id": 9235,
+          "email": "jacob@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Streams",
+            "Learn git",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 10,
+        "endWeek": 13
+      },
+      "description": "Streams",
+      "isCompleted": false
+    },
+    {
+      "taskMembers": [
+        {
+          "name": "Matilda",
+          "id": 3232,
+          "email": "matilda@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        },
+        {
+          "name": "Fredrik",
+          "id": 4420,
+          "email": "fredrik@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 0.0,
+          "taskNames": [
+            "Code",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Project report",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4"
+          ]
+        }
+      ],
+      "schedule": {
+        "startWeek": 12,
+        "endWeek": 15
+      },
+      "description": "Project report",
+      "isCompleted": false
+    }
+  ],
   "projectMembers": [
     {
       "name": "Fredrik",
       "id": 4420,
       "email": "fredrik@kkg.com",
       "costPerHour": 199.0,
-      "hoursWorked": 0.0,
-      "taskNames": []
+      "hoursWorked": 73.0,
+      "taskNames": [
+        "Code",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Project report",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4"
+      ]
     },
     {
       "name": "Matilda",
       "id": 3232,
       "email": "matilda@kkg.com",
       "costPerHour": 199.0,
-      "hoursWorked": 0.0,
-      "taskNames": []
+      "hoursWorked": 71.0,
+      "taskNames": [
+        "Code",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Project report",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4"
+      ]
     },
     {
-     "name": "August",
-     "id": 6969,
-     "email": "august@kkg.com",
-     "costPerHour": 199.0,
-     "hoursWorked": 0.0,
-     "taskNames": []
-   },
-
+      "name": "August",
+      "id": 6969,
+      "email": "august@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 78.0,
+      "taskNames": [
+        "FX",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4",
+        "FX"
+      ]
+    },
     {
       "name": "Oskar",
       "id": 2256,
       "email": "oskar@kkg.com",
       "costPerHour": 199.0,
-      "hoursWorked": 0.0,
-      "taskNames": []
+      "hoursWorked": 60.0,
+      "taskNames": [
+        "Code",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4"
+      ]
     },
     {
-    "name": "Marcus",
-    "id": 1111,
-    "email": "marcus@kkg.com",
-    "costPerHour":199.0,
-   "hoursWorked": 0.0,
-      "taskNames": []
+      "name": "Marcus",
+      "id": 1111,
+      "email": "marcus@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 78.0,
+      "taskNames": [
+        "FX",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4",
+        "FX",
+        "FX"
+      ]
     },
     {
-     "name": "Adam",
-     "id": 1337,
-     "email": "adam@kkg.com",
-     "costPerHour": 199.0,
-     "hoursWorked": 0.0,
-     "taskNames": []
-   },
-   {
-     "name": "Jacob",
-     "id": 9235,
-     "email": "jacob@kkg.com",
-     "costPerHour": 199.0,
-     "hoursWorked": 0.0,
-     "taskNames": []
-   },
-
+      "name": "Adam",
+      "id": 1337,
+      "email": "adam@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 52.0,
+      "taskNames": [
+        "J-son",
+        "Learn git",
+        "Assignment 1",
+        "Assignment 2",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4"
+      ]
+    },
+    {
+      "name": "Jacob",
+      "id": 9235,
+      "email": "jacob@kkg.com",
+      "costPerHour": 199.0,
+      "hoursWorked": 26.5,
+      "taskNames": [
+        "Streams",
+        "Learn git",
+        "Assignment 2",
+        "Management meeting 1",
+        "Management meeting 2",
+        "Management meeting 3",
+        "Management meeting 4"
+      ]
+    }
   ],
   "projectRisks": [
     {
@@ -68,16 +1289,15 @@
       "impact": 7
     },
     {
-       "description": "Not documenting hours correctly",
-       "probability": 6,
-       "impact": 4
-     },
-     {
+      "description": "Not documenting hours correctly",
+      "probability": 6,
+      "impact": 4
+    },
+    {
       "description": "Poor teamwork",
       "probability": 2,
       "impact": 9
     }
-
   ],
   "takenIDs": [],
   "schedule": {

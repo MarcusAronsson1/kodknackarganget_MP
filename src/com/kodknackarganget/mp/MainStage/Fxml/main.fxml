@@ -45,17 +45,17 @@
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="537.0" layoutY="16.0" text="Dealine" textFill="WHITE">
+                  <Label layoutX="537.0" layoutY="16.0" text="Deadline" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="112.0" layoutY="80.0" text="Week 1" textFill="WHITE">
+                  <Label fx:id="startWeekLabel" layoutX="112.0" layoutY="80.0" text="Week 1" textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <Label layoutX="497.0" layoutY="80.0" text="Week 10" textFill="WHITE">
+                  <Label fx:id="endWeekLabel" layoutX="497.0" layoutY="80.0" text="Week 10" textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
@@ -69,7 +69,7 @@
                         <Font name="Apple Braille" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="budget" layoutX="202.0" layoutY="30.0" text="10 000 SEK" textFill="#111111">
+                  <Label fx:id="budget" layoutX="202.0" layoutY="30.0" textFill="#111111">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -82,7 +82,7 @@
                         <ColorAdjust hue="-0.22" />
                      </effect>
                   </ImageView>
-                  <ProgressIndicator layoutX="408.0" layoutY="20.0" progress="0.63">
+                  <ProgressIndicator fx:id="budgetIndicator" layoutX="408.0" layoutY="20.0" progress="0.0">
                      <effect>
                         <ColorAdjust hue="-0.2" />
                      </effect>
@@ -91,12 +91,12 @@
             </Pane>
             <Pane layoutX="91.0" layoutY="325.0" prefHeight="150.0" prefWidth="600.0" styleClass="paneLayout">
                <children>
-                  <Label layoutX="102.0" layoutY="57.0" text="RISK" textFill="WHITE">
+                  <Label layoutX="74.0" layoutY="27.0" text="RISKS" textFill="WHITE">
                      <font>
                         <Font name="Apple Braille" size="18.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="23.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="24.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Img/riskicon1.png" />
                      </image>
@@ -104,10 +104,11 @@
                         <ColorAdjust brightness="1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
                      </effect>
                   </ImageView>
-                  <GridPane alignment="CENTER" layoutX="280.0" layoutY="40.0" prefHeight="90.0" prefWidth="256.0" styleClass="gridLines">
+                  <GridPane alignment="CENTER" layoutX="220.0" layoutY="48.0" prefHeight="90.0" prefWidth="256.0" styleClass="gridLines">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -115,46 +116,61 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true">
+                        <Label fx:id="risk1Impact" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="6" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1">
+                        <Label fx:id="risk1Prob" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="6" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="4" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="1">
+                        <Label fx:id="risk2Impact" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="4" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="1">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="5" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="2">
+                        <Label fx:id="risk3Impact" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="5" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.rowIndex="2">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="6" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Label fx:id="risk3Prob" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="6" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Label fx:id="risk2Prob" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="risk1Risk" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="risk2Risk" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="risk3Risk" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" text="3" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
                      </children>
                   </GridPane>
-                  <Label layoutX="325.0" layoutY="17.0" text="Impact" textFill="WHITE" />
-                  <Label layoutX="435.0" layoutY="17.0" text="Probability" textFill="WHITE" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="49.0" prefWidth="100.0" text="Problem" textFill="WHITE" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="77.0" prefWidth="100.0" text="Problem" textFill="WHITE" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="105.0" prefWidth="100.0" text="Problem" textFill="WHITE" />
+                  <Label layoutX="241.0" layoutY="17.0" text="Impact" textFill="WHITE" />
+                  <Label layoutX="313.0" layoutY="17.0" text="Probability" textFill="WHITE" />
+                  <Label fx:id="risk1Label" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="54.0" prefWidth="200.0" text="Problem" textFill="WHITE" />
+                  <Label fx:id="risk2Label" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="83.0" prefHeight="21.0" prefWidth="200.0" text="Problem" textFill="WHITE" />
+                  <Label fx:id="risk3Label" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="112.0" prefWidth="200.0" text="Problem" textFill="WHITE" />
+                  <Label layoutX="417.0" layoutY="17.0" text="Risk" textFill="WHITE" />
                </children>
             </Pane>
-            <Button fx:id="but" layoutX="371.0" layoutY="167.0" mnemonicParsing="false" styleClass="buttonBox" text="Button" />
          </children>
       </Pane>
       <Pane prefHeight="90.0" prefWidth="200.0" styleClass="toplabel">
@@ -176,7 +192,7 @@
                </effect>
             </ImageView>
             <Separator layoutX="100.0" layoutY="10.0" orientation="VERTICAL" prefHeight="70.0" />
-            <Label alignment="TOP_CENTER" layoutX="330.0" layoutY="25.0" text="DASHBORD" textFill="#434343">
+            <Label fx:id="projectNameLabel" alignment="TOP_CENTER" layoutX="330.0" layoutY="25.0" text="DASHBORD" textFill="#434343">
                <font>
                   <Font name="Apple Braille" size="30.0" />
                </font>
@@ -211,6 +227,11 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
+                  <Button fx:id="ecoBtn" mnemonicParsing="false" styleClass="buttonMenu" text="+ ECONOMICS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
                </children>
                <opaqueInsets>
                   <Insets />
@@ -218,11 +239,6 @@
             </VBox>
             <Separator layoutX="25.0" layoutY="50.0" opacity="0.34" prefWidth="150.0" />
             <Separator layoutX="25.0" layoutY="305.0" opacity="0.34" prefWidth="150.0" />
-            <Button fx:id="saveBtn" layoutX="65.0" layoutY="423.0" mnemonicParsing="false" styleClass="buttonBox" text="SAVE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
          </children>
       </Pane>
    </children>

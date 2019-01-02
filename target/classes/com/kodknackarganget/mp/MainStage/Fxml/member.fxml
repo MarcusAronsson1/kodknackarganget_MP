@@ -14,72 +14,26 @@
             <Image url="@../Img/rocketbackground.png" />
          </image>
       </ImageView>
-      <Pane prefHeight="510.0" prefWidth="800.0">
+      <Pane fx:id="parentPane" prefHeight="510.0" prefWidth="800.0">
          <children>
-            <Pane layoutX="280.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
+            <Pane fx:id="memberPane1" layoutX="55.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
-                  <Label layoutX="31.0" layoutY="15.0" text="matilda@gmail.com" underline="true">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="31.0" layoutY="38.0" text="0708-896462" underline="true">
+                  <Label layoutX="33.0" layoutY="38.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="31.0" layoutY="63.0" text="ID: 2122" underline="true">
+                  <Label layoutX="33.0" layoutY="63.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="31.0" layoutY="86.0" text="Salary: 189 SEK/h" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children></Pane>
-            <Pane layoutX="55.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
-               <children>
-                  <Label layoutX="31.0" layoutY="15.0" text="marcus@gmail.com" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="31.0" layoutY="38.0" text="0708-846580" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="31.0" layoutY="63.0" text="ID: 2672" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="31.0" layoutY="86.0" text="Salary: 189 SEK/h" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children></Pane>
-            <Pane layoutX="510.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
-               <children>
-                  <Label layoutX="37.0" layoutY="15.0" text="oskar@gmail.com" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="37.0" layoutY="38.0" text="0785-086755" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="37.0" layoutY="63.0" text="ID: 7622" underline="true">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="37.0" layoutY="86.0" text="Salary: 190 SEK/h" underline="true">
+                  <Label layoutX="33.0" layoutY="86.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -88,65 +42,112 @@
             </Pane>
             <Pane layoutX="280.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
-                  <Label layoutX="34.0" layoutY="15.0" text="fredrik@gmail.com" underline="true">
+                  <Label layoutX="34.0" layoutY="15.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font></Label>
-                  <Label layoutX="34.0" layoutY="38.0" text="0785-547362" underline="true">
+                  <Label layoutX="34.0" layoutY="38.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font></Label>
-                  <Label layoutX="34.0" layoutY="63.0" text="ID: 1244" underline="true">
+                  <Label layoutX="34.0" layoutY="63.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font></Label>
-                  <Label layoutX="34.0" layoutY="86.0" text="Salary: 190 SEK/h" underline="true">
+                  <Label layoutX="34.0" layoutY="86.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font></Label>
                </children>
             </Pane>
-            <Pane fx:id="memberPane1" layoutX="55.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
+            <Pane layoutX="510.0" layoutY="50.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" text="august@gmail.com" underline="true">
+                  <Label layoutX="37.0" layoutY="15.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="33.0" layoutY="38.0" text="0708-565057" underline="true">
+                  <Label layoutX="37.0" layoutY="38.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="33.0" layoutY="63.0" text="ID: 1337" underline="true">
+                  <Label layoutX="37.0" layoutY="63.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="33.0" layoutY="86.0" text="Salary: 199 SEK/h" underline="true">
+                  <Label layoutX="37.0" layoutY="86.0" underline="true">
                      <font>
                         <Font size="15.0" />
-                     </font></Label>
+                     </font>
+                  </Label>
                </children>
             </Pane>
+            <Pane layoutX="55.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
+               <children>
+                  <Label layoutX="31.0" layoutY="15.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="38.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="63.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="86.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="280.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
+               <children>
+                  <Label layoutX="31.0" layoutY="15.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="38.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="63.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="86.0" underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
             <Pane layoutX="510.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
-                  <Label layoutX="37.0" layoutY="15.0" text="adam@gmail.com" underline="true">
+                  <Label layoutX="37.0" layoutY="15.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="38.0" text="0785-546752" underline="true">
+                  <Label layoutX="37.0" layoutY="38.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="63.0" text="ID: 1509" underline="true">
+                  <Label layoutX="37.0" layoutY="63.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="86.0" text="Salary: 190 SEK/h" underline="true">
+                  <Label layoutX="37.0" layoutY="86.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -154,22 +155,22 @@
                </children></Pane>
             <Pane layoutX="55.0" layoutY="370.0" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox">
                <children>
-                  <Label layoutX="37.0" layoutY="15.0" text="jacob@gmail.com" underline="true">
+                  <Label layoutX="37.0" layoutY="15.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="38.0" text="0708-005677" underline="true">
+                  <Label layoutX="37.0" layoutY="38.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="63.0" text="ID: 9007" underline="true">
+                  <Label layoutX="37.0" layoutY="63.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="37.0" layoutY="86.0" text="Salary: 189 SEK/h" underline="true">
+                  <Label layoutX="37.0" layoutY="86.0" underline="true">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -178,13 +179,6 @@
             </Pane>
             <Pane layoutX="280.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox" />
             <Pane layoutX="510.0" layoutY="370.0" opacity="0.35" prefHeight="120.0" prefWidth="200.0" styleClass="smallMemberBox" />
-            <Label layoutX="127.0" layoutY="29.0" text="AUGUST" />
-            <Label layoutX="356.0" layoutY="195.0" text="MATILDA" />
-            <Label layoutX="130.0" layoutY="195.0" text="MARCUS" />
-            <Label layoutX="586.0" layoutY="29.0" text="OSKAR" />
-            <Label layoutX="354.0" layoutY="29.0" text="FREDRIK" />
-            <Label layoutX="593.0" layoutY="195.0" text="ADAM" />
-            <Label layoutX="129.0" layoutY="348.0" text="JACOB" />
          </children>
       </Pane>
    </children>

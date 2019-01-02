@@ -4,8 +4,6 @@ import com.kodknackarganget.mp.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import static com.kodknackarganget.mp.Main.stage;
-
 public class AddTaskController extends Controller {
 
     @FXML
