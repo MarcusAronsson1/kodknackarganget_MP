@@ -2,111 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="d">
+      <change afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/img/budgeticon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DIT092.json" beforeDir="false" afterPath="$PROJECT_DIR$/DIT092.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kodknackarganget_MP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kodknackarganget_MP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/addRisk.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/addTask.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/createMember.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kodknackarganget_MP/com/kodknackarganget/mp/popups/editProject.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/MainStage/code/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/popups/AddTaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kodknackarganget/mp/writeJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/MainStage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/member.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Fxml/tasks.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/adamicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/augusticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/budgeticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/doneicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/homeicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/marcusicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/personicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/riskicon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/Img/rocketbackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlControllerHome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlMemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlSearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/FxmlTasksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/MainStage/code/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/mainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/AddRiskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/AddTaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/CreateMemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/popups/EditProjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/writeJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kodknackarganget/mp/writeJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -250,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="154">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding>
                 <element signature="e#1244#1245#0" expanded="true" />
                 <element signature="e#1295#1296#0" expanded="true" />
@@ -363,8 +267,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DIT092.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20024">
-              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+            <state relative-caret-position="-19701">
+              <caret line="119" column="25" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -433,11 +337,11 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="692" />
+    <option name="y" value="63" />
     <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -466,6 +370,27 @@
             <path>
               <item name="kodknackarganget_MP" type="b2602c69:ProjectViewProjectNode" />
               <item name="kodknackarganget_MP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kodknackarganget_MP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kodknackarganget_MP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mp" type="462c0819:PsiDirectoryNode" />
+              <item name="MainStage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kodknackarganget_MP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kodknackarganget_MP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mp" type="462c0819:PsiDirectoryNode" />
+              <item name="MainStage" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kodknackarganget_MP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kodknackarganget_MP" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -489,7 +414,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546457763958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546520358071" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../programming projects/testProjectFX" />
     <property name="project.structure.last.edited" value="Project" />
@@ -504,6 +429,7 @@
       <recent name="C:\Users\Marcus\Desktop\kodknackarganget_MP\src\com\kodknackarganget\mp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marcus\Desktop\kodknackarganget_MP\src\com\kodknackarganget\mp\MainStage\img" />
       <recent name="C:\Users\Marcus\Desktop\kodknackarganget_MP" />
       <recent name="C:\Users\Marcus\Desktop\kodknackarganget_MP\src" />
       <recent name="C:\Users\Marcus\Desktop\kodknackarganget_MP\src\com\kodknackarganget\mp" />
@@ -1000,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DIT092.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20024">
-          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        <state relative-caret-position="-19701">
+          <caret line="119" column="25" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1115,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodknackarganget/mp/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="154">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="e#1244#1245#0" expanded="true" />
             <element signature="e#1295#1296#0" expanded="true" />

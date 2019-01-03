@@ -91,6 +91,25 @@
             "FX",
             "FX"
           ]
+        },
+        {
+          "name": "August",
+          "id": 6969,
+          "email": "august@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 78.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4",
+            "FX",
+            "FX"
+          ]
         }
       ],
       "schedule": {
@@ -1209,6 +1228,7 @@
         "Management meeting 2",
         "Management meeting 3",
         "Management meeting 4",
+        "FX",
         "FX"
       ]
     },
