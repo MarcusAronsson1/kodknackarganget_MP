@@ -12,7 +12,7 @@ public class writeJSON {
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create(); //Create JSON with pretty printing
 
-        try (FileWriter writer = new FileWriter("project.json")) {
+        try (FileWriter writer = new FileWriter("DIT092.json")) {
 
             gson.toJson(project, writer);
 
