@@ -20,15 +20,17 @@ public class Member {
         this.taskNames = new ArrayList<>();
     }
 
-    public void addTask(String taskName){       // Have to add a String and not a task
+    public void addTask(String taskName){       //Adding the name of a task to a member
         this.taskNames.add(taskName);
     }
 
-    public void addHoursWorked(double hours){ // addHoursWorked for a member
+    public void addHoursWorked(double hours){      //Adding on hours to the total amount of hours a member has worked
         hoursWorked += hours;
     }
 
 
+    
+    //Getters and Setters
     public String getName() {
         return name;
     }

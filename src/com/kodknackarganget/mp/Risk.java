@@ -11,11 +11,15 @@ public class Risk {
         this.impact = impact;
     }
 
-    public int calculateRisk(){
+    public int calculateRisk(){            //Calculating the risk of the project
         int risk;
         risk =this.probability * this.impact;
         return risk;
     }
+    
+    
+    
+    //Getters and Setters
     public int getProbability() {
         return probability;
     }
