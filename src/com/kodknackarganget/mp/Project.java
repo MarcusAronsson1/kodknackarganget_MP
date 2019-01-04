@@ -29,17 +29,6 @@ public class Project {
         this.takenIDs = new ArrayList<>();
 
     }
-/*
-    public void saveProject(Project project) {
-        writeJSON saveProject = new writeJSON();
-        saveProject.saveJSON(project);
-    }
-
-    public Project loadProject() {
-        readJSON loadProject = new readJSON();
-        return loadProject.loadJSON();
-    }
-    */
 
     public double calculateCostVariance() {
         return moneyBudget - getTotalCost();

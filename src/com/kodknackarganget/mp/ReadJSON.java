@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.Reader;
 
 
-public class readJSON {
+public class ReadJSON {
 
     public Project loadJSON(){
 
