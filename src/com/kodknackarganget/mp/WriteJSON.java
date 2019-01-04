@@ -6,7 +6,7 @@ import com.google.gson.GsonBuilder;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class writeJSON {
+public class WriteJSON {
 
     public void saveJSON(Project project){
 

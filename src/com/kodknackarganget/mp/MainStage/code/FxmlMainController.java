@@ -4,7 +4,6 @@ import com.kodknackarganget.mp.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -228,12 +227,12 @@ public class FxmlMainController {
     }
 
     public void loadProject() {
-        readJSON loadProject = new readJSON();
+        ReadJSON loadProject = new ReadJSON();
         this.project = loadProject.loadJSON();
     }
 
     public void saveProject() {
-        writeJSON saveProject = new writeJSON();
+        WriteJSON saveProject = new WriteJSON();
         saveProject.saveJSON(this.project);
     }
 }

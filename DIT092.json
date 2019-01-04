@@ -200,6 +200,26 @@
             "Management meeting 3",
             "Management meeting 4"
           ]
+        },
+        {
+          "name": "Marcus",
+          "id": 1111,
+          "email": "marcus@kkg.com",
+          "costPerHour": 199.0,
+          "hoursWorked": 78.0,
+          "taskNames": [
+            "FX",
+            "Learn git",
+            "Assignment 1",
+            "Assignment 2",
+            "Management meeting 1",
+            "Management meeting 2",
+            "Management meeting 3",
+            "Management meeting 4",
+            "FX",
+            "FX",
+            "J-son"
+          ]
         }
       ],
       "schedule": {
@@ -1265,7 +1285,8 @@
         "Management meeting 3",
         "Management meeting 4",
         "FX",
-        "FX"
+        "FX",
+        "J-son"
       ]
     },
     {
